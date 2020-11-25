@@ -46,6 +46,7 @@
 <script>
 import airtable from '../airtable';
 import config from '../config.yaml';
+import { normalize } from '../utils';
 
 export default {
 	name: 'Concepts',
@@ -68,8 +69,8 @@ export default {
 			return { ...rest, path, children, related };
 		},
 	},
-	beforeMount() {
-		airtable('concepts')
+	async beforeMount() {
+		await airtable('concepts')
 			.select(config.airtable.concepts)
 			.eachPage((records, nextPage) => {
 				const concepts = records.reduce((acc, { id, fields }) => {
@@ -79,6 +80,10 @@ export default {
 				this.concepts = { ...concepts };
 				nextPage();
 			});
+		// Load concept if queried in url route
+		const { concept } = this.$route.params;
+		const concepts = Object.values(this.concepts);
+		if (concept) this.select(concepts.find(({ name }) => normalize(name) === concept));
 	},
 	methods: {
 		select(item) {
