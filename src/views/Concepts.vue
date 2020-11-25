@@ -3,7 +3,12 @@
 		<div v-if="selected" class="concept">
 			<header class="concept__header">
 				<figure class="cover">
-					<img :src="selected.bg[0].url">
+					<component
+						:is="mimeType(selected.bg)"
+						:src="selected.bg[0].url"
+						autoplay
+						loop />
+					<figcaption>{{ selected.bg[0].filename }}</figcaption>
 				</figure>
 				<ul class="concept__path">
 					<li><button @click="select()">Conceptes</button></li>
@@ -81,6 +86,9 @@ export default {
 		},
 		getPath([id] = []) {
 			return id ? [...this.getPath(this.concepts[id]._parent), this.concepts[id]] : [];
+		},
+		mimeType(source) {
+			return source[0].type.match(/video\//g) ? 'video' : 'img';
 		},
 	},
 };
