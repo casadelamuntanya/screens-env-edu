@@ -1,15 +1,15 @@
 <template>
 	<section class="concepts">
 		<div v-if="selected" class="concept">
+			<figure class="cover">
+				<component
+					:is="mimeType(selected.bg[0])"
+					:src="selected.bg[0].url"
+					autoplay
+					loop />
+				<figcaption>{{ selected.bg[0].filename }}</figcaption>
+			</figure>
 			<header class="concept__header">
-				<figure class="cover">
-					<component
-						:is="mimeType(selected.bg)"
-						:src="selected.bg[0].url"
-						autoplay
-						loop />
-					<figcaption>{{ selected.bg[0].filename }}</figcaption>
-				</figure>
 				<ul class="concept__path">
 					<li><button @click="select()">Conceptes</button></li>
 					<li v-for="step in selected.path" :key="step.name">
@@ -39,7 +39,7 @@
 				<button @click="select(concept)">{{ concept.name }}</button>
 			</li>
 		</ul>
-		<router-link to="/">&times;</router-link>
+		<router-link to="/" class="close-btn">&times;</router-link>
 	</section>
 </template>
 

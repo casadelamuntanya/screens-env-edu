@@ -1,0 +1,44 @@
+.concepts {
+	color: #fff;
+
+	.concept {
+		position: relative;
+		height: 100vh;
+
+		.cover {
+			video,
+			img { mask-image: linear-gradient(to bottom, rgba(#000, 0.7) 0, #000 50%); }
+		}
+
+		&__header {
+			padding: 4rem;
+
+			h2 {
+				font-family: 'Barlow Condensed', sans-serif;
+				font-size: 11rem;
+				text-transform: uppercase;
+				line-height: 0.85;
+				margin: 0.125em 0;
+			}
+		}
+
+		&__path {
+			display: flex;
+
+			li + li::before {
+				content: '/';
+				display: inline-block;
+			}
+
+			button {
+				padding: 1rem 1em;
+				font-size: 1.25rem;
+			}
+		}
+
+		&__description {
+			font-size: 1.5rem;
+			margin-top: 2em;
+		}
+	}
+}
