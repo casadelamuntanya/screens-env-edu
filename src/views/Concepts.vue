@@ -51,9 +51,17 @@
 				</div>
 			</footer>
 		</div>
+		<!-- Root -->
 		<ul v-else class="concepts__root">
 			<li v-for="concept in root" :key="concept.name">
-				<button @click="select(concept)">{{ concept.name }}</button>
+				<button @click="select(concept)">
+					<component
+						:is="mimeType(concept.bg[0])"
+						:src="thumbnail(concept.bg[0])"
+						autoplay
+						loop />
+					<h3>{{ concept.name }}</h3>
+				</button>
 			</li>
 		</ul>
 		<router-link to="/" class="close-btn">&times;</router-link>
