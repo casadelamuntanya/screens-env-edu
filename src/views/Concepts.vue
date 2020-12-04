@@ -19,20 +19,37 @@
 				<h2 class="concept__name">{{ selected.name }}</h2>
 				<p class="concept__description">{{ selected.description }}</p>
 			</header>
-			<ul class="concept__children">
-				<li v-for="concept in selected.children" :key="concept.name">
-					<button @click="select(concept)">
-						{{ concept.name }}
-					</button>
-				</li>
-			</ul>
-			<ul class="concept__related">
-				<li v-for="concept in selected.related" :key="concept.name">
-					<button @click="select(concept)">
-						{{ concept.name }}
-					</button>
-				</li>
-			</ul>
+			<footer>
+				<div v-if="selected.children.length" class="concept__children">
+					<ul>
+						<li v-for="concept in selected.children" :key="concept.name">
+							<button @click="select(concept)">
+								<component
+									:is="mimeType(concept.bg[0])"
+									:src="thumbnail(concept.bg[0])"
+									autoplay
+									loop />
+								<h3>{{ concept.name }}</h3>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div v-if="selected.related.length" class="concept__related">
+					<h4>També et pot interessar...</h4>
+					<ul>
+						<li v-for="concept in selected.related" :key="concept.name">
+							<button @click="select(concept)">
+								<component
+									:is="mimeType(concept.bg[0])"
+									:src="thumbnail(concept.bg[0])"
+									autoplay
+									loop />
+								<h3>{{ concept.name }}</h3>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 		<ul v-else class="concepts__root">
 			<li v-for="concept in root" :key="concept.name">
@@ -93,7 +110,11 @@ export default {
 			return id ? [...this.getPath(this.concepts[id]._parent), this.concepts[id]] : [];
 		},
 		mimeType(source) {
-			return source[0].type.match(/video\//g) ? 'video' : 'img';
+			return source.type.match(/video\//g) ? 'video' : 'img';
+		},
+		thumbnail(source) {
+			const { thumbnails } = source;
+			return thumbnails ? thumbnails.large.url : source.url;
 		},
 	},
 };

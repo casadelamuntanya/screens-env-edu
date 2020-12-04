@@ -1,9 +1,24 @@
+%card {
+	box-sizing: border-box;
+	padding: 1rem;
+	box-shadow: 0 0 20px 0 rgba(#000, 1);
+	overflow: hidden;
+	border-radius: 10px;
+	font-family: 'Barlow Condensed', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #000;
+
+	img,
+	video { @extend .cover; }
+}
+
 .concepts {
 	color: #fff;
+	height: 100%;
 
 	.concept {
 		position: relative;
-		height: 100vh;
+		height: 100%;
 
 		.cover {
 			video,
@@ -15,6 +30,7 @@
 
 			h2 {
 				font-family: 'Barlow Condensed', sans-serif;
+				font-weight: 900;
 				font-size: 11rem;
 				text-transform: uppercase;
 				line-height: 0.85;
@@ -39,6 +55,47 @@
 		&__description {
 			font-size: 1.5rem;
 			margin-top: 2em;
+		}
+
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: linear-gradient(to top, rgba(#000, 0.5) 50%, transparent);
+
+			h4 {
+				text-align: center;
+				font-size: 1.25rem;
+				text-transform: uppercase;
+				font-family: 'Barlow Condensed', sans-serif;
+			}
+		}
+
+		&__children {
+			ul {
+				@extend .scrollable;
+				margin-bottom: 2rem !important;
+			}
+			button {
+				@extend %card;
+				height: 370px;
+				width: 270px;
+				font-size: 2.5rem;
+			}
+		}
+
+		&__related {
+			ul {
+				@extend .scrollable;
+				margin-bottom: 2rem !important;
+			}
+			button {
+				@extend %card;
+				height: 200px;
+				width: 150px;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
 		}
 	}
 }
