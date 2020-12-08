@@ -1,103 +1,36 @@
-%card {
+.card {
 	box-sizing: border-box;
-	padding: 1rem;
-	box-shadow: 0 0 20px 0 rgba(#000, 1);
+	box-shadow: 0 0 20px 0 rgba(#000, 0.6);
 	overflow: hidden;
 	border-radius: 3px;
+	position: relative;
+	outline: 0;
+}
+
+h2,
+h3,
+h4 {
 	font-family: 'Barlow Condensed', sans-serif;
 	text-transform: uppercase;
-	text-shadow: 0 0 10px #000;
+}
 
-	img,
-	video { @extend .cover; }
+h3,
+h4 {
+	text-shadow: 0 0 1em #000;
+	padding: 0.5em;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 11rem;
+	margin: 0.125em 0;
+	text-shadow: none;
+	line-height: 0.85;
 }
 
 .concepts {
 	color: #fff;
 	height: 100%;
-
-	.concept {
-		position: relative;
-		height: 100%;
-
-		.cover {
-			video,
-			img { mask-image: linear-gradient(to bottom, rgba(#000, 0.7) 0, #000 50%); }
-		}
-
-		&__header {
-			padding: 4rem;
-
-			h2 {
-				font-family: 'Barlow Condensed', sans-serif;
-				font-weight: 900;
-				font-size: 11rem;
-				text-transform: uppercase;
-				line-height: 0.85;
-				margin: 0.125em 0;
-			}
-		}
-
-		&__path {
-			display: flex;
-
-			li + li::before {
-				content: '/';
-				display: inline-block;
-			}
-
-			button {
-				padding: 1rem 1em;
-				font-size: 1.25rem;
-			}
-		}
-
-		&__description {
-			font-size: 1.5rem;
-			margin-top: 2em;
-		}
-
-		footer {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			background: linear-gradient(to top, rgba(#000, 0.5) 50%, transparent);
-
-			h4 {
-				text-align: center;
-				font-size: 1.25rem;
-				text-transform: uppercase;
-				font-family: 'Barlow Condensed', sans-serif;
-			}
-		}
-
-		&__children {
-			ul {
-				@extend .scrollable;
-				margin-bottom: 2rem !important;
-			}
-			button {
-				@extend %card;
-				height: 370px;
-				width: 270px;
-				font-size: 2.5rem;
-			}
-		}
-
-		&__related {
-			ul {
-				@extend .scrollable;
-				margin-bottom: 2rem !important;
-			}
-			button {
-				@extend %card;
-				height: 200px;
-				width: 150px;
-				font-size: 1.5rem;
-				font-weight: 600;
-			}
-		}
-	}
 
 	&__root {
 		display: flex;
@@ -110,14 +43,82 @@
 
 			& + li { margin-top: 2px; }
 
-			button {
-				@extend %card;
+			.card {
 				width: 100%;
 				height: 100%;
 				font-size: 7rem;
 				font-weight: 900;
 				box-shadow: none !important;
 			}
+		}
+	}
+}
+
+.concept {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.cover {
+		video,
+		img { mask-image: linear-gradient(to bottom, rgba(#000, 0.7) 0, #000 50%); }
+	}
+
+	&__header { padding: 4rem; }
+
+	&__path {
+		display: flex;
+
+		li + li::before {
+			content: '/';
+			display: inline-block;
+		}
+
+		button {
+			padding: 1rem 1em;
+			font-size: 1.25rem;
+		}
+	}
+
+	&__description {
+		font-size: 1.3rem;
+		line-height: 1.2;
+		margin-top: 2em;
+		width: 60%;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background: linear-gradient(to top, rgba(#000, 0.5) 50%, transparent);
+
+		h4 {
+			text-align: center;
+			font-size: 1.25rem;
+			text-transform: uppercase;
+			font-family: 'Barlow Condensed', sans-serif;
+		}
+	}
+
+	&__children {
+		margin-bottom: 2rem !important;
+
+		.card {
+			height: 370px;
+			width: 270px;
+			font-size: 2.75rem;
+		}
+	}
+
+	&__related {
+		margin-bottom: 2rem !important;
+
+		.card {
+			height: 200px;
+			width: 150px;
+			font-size: 1.75rem;
+			font-weight: 600;
 		}
 	}
 }

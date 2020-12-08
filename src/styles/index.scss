@@ -3,6 +3,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
+	user-select: none;
 }
 
 #app {
@@ -44,8 +45,12 @@ button {
 	li {
 		margin: 1rem;
 		flex: 0 0 content;
-		z-index: 1;
 	}
+}
+
+figure {
+	position: relative;
+	outline: 0;
 }
 
 .cover {
@@ -55,13 +60,16 @@ button {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	z-index: -1;
+	z-index: 0;
 	background: #000;
+	pointer-events: none;
 
 	video,
-	img {
-		@extend .cover;
-		z-index: 0;
+	img { @extend .cover; }
+
+	& + * {
+		position: relative;
+		z-index: 1;
 	}
 
 	figcaption {

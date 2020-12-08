@@ -1,14 +1,10 @@
 <template>
 	<section class="concepts">
-		<div v-if="selected" class="concept">
-			<figure class="cover">
-				<component
-					:is="mimeType(selected.bg[0])"
-					:src="selected.bg[0].url"
-					autoplay
-					loop />
-				<figcaption>{{ selected.bg[0].filename }}</figcaption>
-			</figure>
+		<card
+			v-if="selected"
+			:item="selected"
+			class="concept"
+			attribution>
 			<header class="concept__header">
 				<ul class="concept__path">
 					<li><button @click="select()">Conceptes</button></li>
@@ -20,48 +16,32 @@
 				<p class="concept__description">{{ selected.description }}</p>
 			</header>
 			<footer>
-				<div v-if="selected.children.length" class="concept__children">
-					<ul>
+				<div class="concept__children">
+					<ul class="scrollable">
 						<li v-for="concept in selected.children" :key="concept.name">
-							<button @click="select(concept)">
-								<component
-									:is="mimeType(concept.bg[0])"
-									:src="thumbnail(concept.bg[0])"
-									autoplay
-									loop />
+							<card :item="concept" @click.native="select(concept)">
 								<h3>{{ concept.name }}</h3>
-							</button>
+							</card>
 						</li>
 					</ul>
 				</div>
 				<div v-if="selected.related.length" class="concept__related">
 					<h4>També et pot interessar...</h4>
-					<ul>
+					<ul class="scrollable">
 						<li v-for="concept in selected.related" :key="concept.name">
-							<button @click="select(concept)">
-								<component
-									:is="mimeType(concept.bg[0])"
-									:src="thumbnail(concept.bg[0])"
-									autoplay
-									loop />
+							<card :item="concept" @click.native="select(concept)">
 								<h3>{{ concept.name }}</h3>
-							</button>
+							</card>
 						</li>
 					</ul>
 				</div>
 			</footer>
-		</div>
-		<!-- Root -->
+		</card>
 		<ul v-else class="concepts__root">
 			<li v-for="concept in root" :key="concept.name">
-				<button @click="select(concept)">
-					<component
-						:is="mimeType(concept.bg[0])"
-						:src="thumbnail(concept.bg[0])"
-						autoplay
-						loop />
+				<card :item="concept" @click.native="select(concept)">
 					<h3>{{ concept.name }}</h3>
-				</button>
+				</card>
 			</li>
 		</ul>
 		<router-link to="/" class="close-btn">&times;</router-link>
@@ -69,12 +49,14 @@
 </template>
 
 <script>
+import Card from '../components/Card.vue';
 import airtable from '../airtable';
 import config from '../config.yaml';
 import { normalize } from '../utils';
 
 export default {
 	name: 'Concepts',
+	components: { Card },
 	data() {
 		return {
 			concepts: {},
@@ -116,13 +98,6 @@ export default {
 		},
 		getPath([id] = []) {
 			return id ? [...this.getPath(this.concepts[id]._parent), this.concepts[id]] : [];
-		},
-		mimeType(source) {
-			return source.type.match(/video\//g) ? 'video' : 'img';
-		},
-		thumbnail(source) {
-			const { thumbnails } = source;
-			return thumbnails ? thumbnails.large.url : source.url;
 		},
 	},
 };
