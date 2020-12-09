@@ -3,30 +3,31 @@
 		<card
 			v-if="selected"
 			:item="selected"
-			class="concept"
-			attribution>
+			:class="['concept', { 'expanded': expanded }]"
+			attribution
+			@click.native="toggleExpandedContent">
 			<header class="concept__header">
 				<ul class="concept__path">
-					<li><button @click="select()">Conceptes</button></li>
+					<li><button @click.stop="select()">Conceptes</button></li>
 					<li v-for="step in selected.path" :key="step.name">
-						<button @click="select(step)">{{ step.name }}</button>
+						<button @click.stop="select(step)">{{ step.name }}</button>
 					</li>
 				</ul>
 				<h2 class="concept__name">{{ selected.name }}</h2>
-				<p class="concept__description">{{ selected.description }}</p>
+				<p class="concept__description expandable">{{ selected.description }}</p>
 			</header>
 			<footer>
-				<div class="concept__media">
+				<div class="concept__media expandable">
 					<ul class="scrollable">
 						<li v-for="item in selected.media" :key="item.id">
-							<card :item="item" attribution />
+							<card :item="item" attribution @click.native.stop />
 						</li>
 					</ul>
 				</div>
 				<div class="concept__children">
 					<ul class="scrollable">
 						<li v-for="concept in selected.children" :key="concept.name">
-							<card :item="concept" @click.native="select(concept)">
+							<card :item="concept" @click.native.stop="select(concept)">
 								<h3>{{ concept.name }}</h3>
 							</card>
 						</li>
@@ -36,7 +37,7 @@
 					<h4>També et pot interessar...</h4>
 					<ul class="scrollable">
 						<li v-for="concept in selected.related" :key="concept.name">
-							<card :item="concept" @click.native="select(concept)">
+							<card :item="concept" @click.native.stop="select(concept)">
 								<h3>{{ concept.name }}</h3>
 							</card>
 						</li>
@@ -46,7 +47,7 @@
 		</card>
 		<ul v-else class="concepts__root">
 			<li v-for="concept in root" :key="concept.name">
-				<card :item="concept" @click.native="select(concept)">
+				<card :item="concept" @click.native.stop="select(concept)">
 					<h3>{{ concept.name }}</h3>
 				</card>
 			</li>
@@ -68,6 +69,7 @@ export default {
 		return {
 			concepts: {},
 			history: [],
+			expanded: false,
 		};
 	},
 	computed: {
@@ -102,9 +104,13 @@ export default {
 	methods: {
 		select(item) {
 			this.history = item ? [...this.history, item] : [];
+			this.expanded = false;
 		},
 		getPath([id] = []) {
 			return id ? [...this.getPath(this.concepts[id]._parent), this.concepts[id]] : [];
+		},
+		toggleExpandedContent() {
+			this.expanded = !this.expanded;
 		},
 	},
 };

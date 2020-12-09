@@ -54,6 +54,12 @@ h2 {
 	}
 }
 
+.expandable {
+	display: none;
+
+	.expanded & { display: block; }
+}
+
 .concept {
 	position: relative;
 	height: 100%;
