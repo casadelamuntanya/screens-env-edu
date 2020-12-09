@@ -31,28 +31,6 @@ button {
 	color: inherit;
 }
 
-.scrollable {
-	display: flex;
-	overflow-x: auto;
-	margin: 1rem 0;
-
-	// Hide scrollbar
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	&::-webkit-scrollbar { display: none; }
-
-	&::before,
-	&::after {
-		content: '';
-		flex: 1 0 1rem;
-	}
-
-	li {
-		margin: 1rem;
-		flex: 0 0 content;
-	}
-}
-
 figure {
 	position: relative;
 	outline: 0;

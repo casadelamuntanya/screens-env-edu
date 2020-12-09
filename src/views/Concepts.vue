@@ -17,31 +17,25 @@
 				<p class="concept__description expandable">{{ selected.description }}</p>
 			</header>
 			<footer>
-				<div class="concept__media expandable">
-					<ul class="scrollable">
-						<li v-for="item in selected.media" :key="item.id">
-							<card :item="item" attribution @click.native.stop />
-						</li>
-					</ul>
+				<div v-if="selected.media" class="concept__media expandable">
+					<scroller v-slot="{ item }" :items="selected.media">
+						<card :item="item" attribution @click.native.stop />
+					</scroller>
 				</div>
 				<div class="concept__children">
-					<ul class="scrollable">
-						<li v-for="concept in selected.children" :key="concept.name">
-							<card :item="concept" @click.native.stop="select(concept)">
-								<h3>{{ concept.name }}</h3>
-							</card>
-						</li>
-					</ul>
+					<scroller v-slot="{ item }" :items="selected.children">
+						<card :item="item" @click.native.stop="select(item)">
+							<h3>{{ item.name }}</h3>
+						</card>
+					</scroller>
 				</div>
 				<div v-if="selected.related.length" class="concept__related">
 					<h4>També et pot interessar...</h4>
-					<ul class="scrollable">
-						<li v-for="concept in selected.related" :key="concept.name">
-							<card :item="concept" @click.native.stop="select(concept)">
-								<h3>{{ concept.name }}</h3>
-							</card>
-						</li>
-					</ul>
+					<scroller v-slot="{ item }" :items="selected.related">
+						<card :item="item" @click.native.stop="select(item)">
+							<h3>{{ item.name }}</h3>
+						</card>
+					</scroller>
 				</div>
 			</footer>
 		</card>
@@ -57,6 +51,7 @@
 </template>
 
 <script>
+import Scroller from '../components/Scroller.vue';
 import Card from '../components/Card.vue';
 import airtable from '../airtable';
 import config from '../config.yaml';
@@ -64,7 +59,7 @@ import { normalize } from '../utils/utils.string';
 
 export default {
 	name: 'Concepts',
-	components: { Card },
+	components: { Scroller, Card },
 	data() {
 		return {
 			concepts: {},
