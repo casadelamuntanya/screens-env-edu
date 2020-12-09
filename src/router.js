@@ -9,7 +9,11 @@ export default new Router({
 	routes: [
 		{ path: '/', component: Navigation },
 		{ path: '/tour', name: 'tour', component: () => import('./views/Tour.vue') },
-		{ path: '/concepts', name: 'concepts', component: () => import('./views/Concepts.vue') },
+		{
+			path: '/concepts/:concept?',
+			name: 'concepts',
+			component: () => import('./views/Concepts.vue'),
+		},
 		{ path: '/quiz', name: 'quiz', component: () => import('./views/Quiz.vue') },
 	],
 });

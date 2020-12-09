@@ -1,2 +1,12 @@
 airtable:
   base: appwdmCZrCmknlpbc
+  concepts:
+    view: List
+    fields:
+      - name
+      - description
+      - bg
+      - _parent
+      - _children
+      - _related
+      - media
