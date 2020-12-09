@@ -16,6 +16,13 @@
 				<p class="concept__description">{{ selected.description }}</p>
 			</header>
 			<footer>
+				<div class="concept__media">
+					<ul class="scrollable">
+						<li v-for="item in selected.media" :key="item.id">
+							<card :item="item" attribution />
+						</li>
+					</ul>
+				</div>
 				<div class="concept__children">
 					<ul class="scrollable">
 						<li v-for="concept in selected.children" :key="concept.name">

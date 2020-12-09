@@ -101,6 +101,33 @@ h2 {
 		}
 	}
 
+	&__media {
+		position: relative;
+		z-index: 2;
+
+		.card {
+			height: 250px;
+			width: 250px;
+			margin: 1rem;
+
+			figcaption { display: none; }
+
+			&:active {
+				position: fixed;
+				height: 90vw;
+				width: 90vw;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: 0 0 0 50vw rgba(#000, 0.9);
+				z-index: 1;
+				margin: 0;
+
+				figcaption { display: block; }
+			}
+		}
+	}
+
 	&__children {
 		margin-bottom: 2rem !important;
 
