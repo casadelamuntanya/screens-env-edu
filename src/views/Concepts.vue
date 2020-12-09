@@ -60,7 +60,7 @@
 import Card from '../components/Card.vue';
 import airtable from '../airtable';
 import config from '../config.yaml';
-import { normalize } from '../utils';
+import { normalize } from '../utils/utils.string';
 
 export default {
 	name: 'Concepts',
