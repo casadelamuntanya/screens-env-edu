@@ -36,6 +36,11 @@ button {
 	overflow-x: auto;
 	margin: 1rem 0;
 
+	// Hide scrollbar
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	&::-webkit-scrollbar { display: none; }
+
 	&::before,
 	&::after {
 		content: '';
