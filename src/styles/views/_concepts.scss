@@ -1,36 +1,36 @@
-.card {
-	box-sizing: border-box;
-	box-shadow: 0 0 20px 0 rgba(#000, 0.6);
-	overflow: hidden;
-	border-radius: 3px;
-	position: relative;
-	outline: 0;
-}
-
-h2,
-h3,
-h4 {
-	font-family: 'Barlow Condensed', sans-serif;
-	text-transform: uppercase;
-}
-
-h3,
-h4 {
-	text-shadow: 0 0 1em #000;
-	padding: 0.5em;
-}
-
-h2 {
-	font-weight: 900;
-	font-size: 11rem;
-	margin: 0.125em 0;
-	text-shadow: none;
-	line-height: 0.85;
-}
-
 .concepts {
 	color: #fff;
 	height: 100%;
+
+	.card {
+		box-sizing: border-box;
+		box-shadow: 0 0 20px 0 rgba(#000, 0.6);
+		overflow: hidden;
+		border-radius: 3px;
+		position: relative;
+		outline: 0;
+	}
+
+	h2,
+	h3,
+	h4 {
+		font-family: 'Barlow Condensed', sans-serif;
+		text-transform: uppercase;
+	}
+
+	h3,
+	h4 {
+		text-shadow: 0 0 1em #000;
+		padding: 0.5em;
+	}
+
+	h2 {
+		font-weight: 900;
+		font-size: 11rem;
+		margin: 0.125em 0;
+		text-shadow: none;
+		line-height: 0.85;
+	}
 
 	&__root {
 		display: flex;
