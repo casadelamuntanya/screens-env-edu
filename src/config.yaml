@@ -10,3 +10,15 @@ airtable:
       - _children
       - _related
       - media
+
+quiz:
+  HINT_SCORE: 0.5
+  QUESTION_COUNT: 10
+  ANSWER_COUNT: 4
+  levels:
+    - easy
+    - medium
+    - hard
+  topics:
+    - flora_fauna
+    - medi_fisic
