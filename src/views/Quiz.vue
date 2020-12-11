@@ -21,7 +21,6 @@
 					</label>
 				</li>
 			</ul>
-			<p><button @click="next">Next</button></p>
 		</div>
 
 		<!-- CONFIG -->
@@ -82,6 +81,11 @@ export default {
 			return { question, answers, valid, hint };
 		},
 	},
+	watch: {
+		'step.answer': function answerChange(answer) {
+			if (answer !== undefined) this.resolve();
+		},
+	},
 	methods: {
 		reset() {
 			this.score = 0;
@@ -99,10 +103,13 @@ export default {
 				this.started = true;
 			}
 		},
-		next() {
+		resolve() {
 			const { valid } = this.question;
 			const { hinted, answer } = this.step;
 			this.score += answer === valid ? hinted ? config.HINT_SCORE : 1 : 0;
+			setTimeout(() => { this.next(); }, config.VALIDATION_TIME * 1000);
+		},
+		next() {
 			const index = this.step.index + 1;
 			if (index === config.QUESTION_COUNT) this.finished = true;
 			else this.step = { answer: undefined, hinter: false, index };

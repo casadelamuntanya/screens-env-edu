@@ -15,6 +15,7 @@ quiz:
   HINT_SCORE: 0.5
   QUESTION_COUNT: 10
   ANSWER_COUNT: 4
+  VALIDATION_TIME: 3
   levels:
     - easy
     - medium
