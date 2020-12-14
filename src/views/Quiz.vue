@@ -2,8 +2,9 @@
 	<section class="quiz">
 		<!-- RESULT -->
 		<div v-if="finished" class="results">
-			<p>Hooray!</p>
+			<h3>🎉 Hooray!</h3>
 			<p>Your score: {{ score }} / 10</p>
+			<p>You needed {{ elapsed }}s to complete</p>
 			<p>
 				<button @click="reset">Try again</button>
 			</p>
@@ -21,6 +22,10 @@
 					</label>
 				</li>
 			</ul>
+			<progress
+				:max="config.COUNTDOWN[selectedLevel]"
+				:value="countdown"
+				:class="`hurry-${hurryLevel}`" />
 		</div>
 
 		<!-- CONFIG -->
@@ -58,6 +63,7 @@ export default {
 	name: 'Quiz',
 	data() {
 		return {
+			config,
 			levels: config.levels,
 			topics: config.topics,
 			selectedLevel: undefined,
@@ -66,6 +72,9 @@ export default {
 			finished: false,
 			step: undefined,
 			score: 0,
+			elapsed: 0,
+			countdown: undefined,
+			interval: undefined,
 		};
 	},
 	computed: {
@@ -80,10 +89,16 @@ export default {
 			const answers = shuffle([...shuffle(invalid).slice(0, config.ANSWER_COUNT - 1), valid]);
 			return { question, answers, valid, hint };
 		},
+		hurryLevel() {
+			return Math.ceil(((this.countdown * 100) / config.COUNTDOWN[this.selectedLevel]) / 25);
+		},
 	},
 	watch: {
 		'step.answer': function answerChange(answer) {
 			if (answer !== undefined) this.resolve();
+		},
+		countdown(countdown) {
+			if (countdown <= 0) this.resolve();
 		},
 	},
 	methods: {
@@ -92,31 +107,42 @@ export default {
 			this.step = undefined;
 			this.finished = false;
 			this.started = false;
+			this.elapsed = 0;
 			this.selectedLevel = undefined;
 			this.selectedTopic = [];
 		},
 		start() {
 			if (this.selectedLevel && this.selectedTopic.length) {
 				this.score = 0;
-				this.step = {	answer: undefined, hinted: false, index: 0 };
 				this.finished = false;
 				this.started = true;
+				this.elapsed = 0;
+				this.next(0);
 			}
 		},
 		resolve() {
 			const { valid } = this.question;
-			const { hinted, answer } = this.step;
+			const { hinted, answer, index } = this.step;
 			this.score += answer === valid ? hinted ? config.HINT_SCORE : 1 : 0;
-			setTimeout(() => { this.next(); }, config.VALIDATION_TIME * 1000);
+			this.elapsed += config.COUNTDOWN[this.selectedLevel] - this.countdown;
+			clearInterval(this.interval);
+			setTimeout(() => {
+				this.next(index + 1);
+			}, config.VALIDATION_TIME * 1000);
 		},
-		next() {
-			const index = this.step.index + 1;
-			if (index === config.QUESTION_COUNT) this.finished = true;
-			else this.step = { answer: undefined, hinter: false, index };
+		next(index) {
+			if (index === this.questions.length) this.finished = true;
+			else {
+				this.step = { answer: undefined, hinter: false, index };
+				this.countdown = config.COUNTDOWN[this.selectedLevel];
+				this.interval = setInterval(() => {
+					this.countdown -= config.STEPDOWN;
+				}, config.STEPDOWN * 1000);
+			}
 		},
 		answerClass({ valid }, answer) {
 			return ['answer', {
-				'is-resolved': this.step.answer !== undefined,
+				'is-resolved': this.step.answer !== undefined || this.countdown <= 0,
 				'is-valid': answer === valid,
 				'is-invalid': answer !== valid,
 			}];

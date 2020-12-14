@@ -12,10 +12,15 @@ airtable:
       - media
 
 quiz:
-  HINT_SCORE: 0.5
-  QUESTION_COUNT: 10
-  ANSWER_COUNT: 4
-  VALIDATION_TIME: 3
+  HINT_SCORE: 0.5       # Punctuation for hinted answer
+  QUESTION_COUNT: 10    # Number of questions
+  ANSWER_COUNT: 4       # Number of answers
+  COUNTDOWN:            # Duration of question, countdown (in seconds)
+    easy: 40
+    medium: 20
+    hard: 10
+  STEPDOWN: 0.5         # Countdown duration (in seconds)
+  VALIDATION_TIME: 3    # Duration of a answer validation (in seconds)
   levels:
     - easy
     - medium
