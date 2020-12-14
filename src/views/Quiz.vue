@@ -22,6 +22,13 @@
 					</label>
 				</li>
 			</ul>
+			<p class="hint">
+				<span v-if="step.hinted">{{ question.hint }}</span>
+				<span v-else @click="step.hinted = true">
+					<img src="../assets/vectors/bulb.svg">
+					Vull una pista!
+				</span>
+			</p>
 			<progress
 				:max="config.COUNTDOWN[selectedLevel]"
 				:value="countdown"
@@ -133,7 +140,7 @@ export default {
 		next(index) {
 			if (index === this.questions.length) this.finished = true;
 			else {
-				this.step = { answer: undefined, hinter: false, index };
+				this.step = { answer: undefined, hinted: false, index };
 				this.countdown = config.COUNTDOWN[this.selectedLevel];
 				this.interval = setInterval(() => {
 					this.countdown -= config.STEPDOWN;
