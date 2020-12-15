@@ -71,6 +71,8 @@
 					{{ $t('quiz.play') }}
 				</button>
 			</p>
+
+			<router-link to="/" class="close-btn">&times;</router-link>
 		</div>
 	</section>
 </template>
