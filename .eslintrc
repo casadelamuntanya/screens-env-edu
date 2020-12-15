@@ -22,6 +22,7 @@
     "object-curly-newline": ["error", {
       "multiline": true
     }],
+    "no-nested-ternary": "off",
     "arrow-parens": ["error", "as-needed"],
     "vue/component-tags-order": ["error", {
       "order": ["template", "script", "style"]

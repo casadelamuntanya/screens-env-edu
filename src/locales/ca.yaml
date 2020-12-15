@@ -4,3 +4,22 @@ views:
   tour: Visita guiada
   concepts: Conceptes
   quiz: Qüestionari
+
+quiz:
+  title: Quiz
+  select_level: Selecciona el nivell
+  level: Nivell
+  levels:
+    easy: Fàcil
+    medium: Intermig
+    hard: Difícil
+  select_topic: Escull els temes
+  topic: Temes
+  topics:
+    flora_fauna: Flora i fauna
+    medi_fisic: Medi físic
+  play: Comença!
+  show_hint: Vull una pista!
+  score: Puntuació
+  time_needed: Resolt en {time} segons
+  replay: Torna-ho a intentar
