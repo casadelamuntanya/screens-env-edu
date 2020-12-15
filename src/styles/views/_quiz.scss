@@ -1,0 +1,226 @@
+.quiz {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f8f8f8;
+	font-size: 2rem;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 0.75em;
+		font: 15rem 'Barlow Condensed', sans-serif;
+		font-weight: 900;
+		// letter-spacing: 0.5rem;
+	}
+
+	.replay,
+	.controls {
+		margin: 5rem 0;
+		text-align: center;
+	}
+
+	button {
+		background: #000;
+		color: #fff;
+		display: inline-block;
+		padding: 2.5rem 5rem;
+		border-radius: 5rem;
+		font-weight: 600;
+		font-size: 2.5rem;
+
+		&:disabled { opacity: 0.1; }
+	}
+
+	.selector {
+		padding: 2rem 2rem 2rem;
+		margin: 5rem 0;
+
+		legend {
+			font: 2.5rem 'Barlow Condensed', sans-serif;
+		}
+
+		label {
+			input { display: none; }
+			span {
+				display: inline-block;
+				box-sizing: border-box;
+				background: #fff;
+				height: 15rem;
+				width: 12rem;
+				margin: 1rem;
+				border-radius: 1rem;
+				background-size: cover;
+				background-position: center center;
+				opacity: 0.7;
+				padding: 1.5rem;
+				font-size: 2.5rem;
+				filter: grayscale(0.5);
+				transition: all 0.3s ease;
+			}
+
+			input:checked + span {
+				opacity: 1;
+				box-shadow: 0 0.5rem 1.5rem 0 rgba(#000, 0.1);
+				transform: scale(1.1);
+				filter: none;
+			}
+		}
+	}
+
+	.question {
+		width: 70%;
+
+		h3 {
+			margin: 5rem 0;
+			font: 3.75rem / 1 'Barlow Condensed', sans-serif;
+		}
+
+		.countdown {
+			font: 5rem 'Barlow Condensed', sans-serif;
+		}
+
+		.answer {
+			input { display: none; }
+
+			span {
+				border: 2px solid #eee;
+				background: #fff;
+				display: block;
+				padding: 2.5rem;
+				margin: 2rem 0;
+				border-radius: 4rem;
+				transition: all 0.3s ease;
+				text-align: center;
+			}
+
+			&.is-resolved {
+				pointer-events: none;
+
+				span {
+					background: transparent;
+					border-color: transparent;
+				}
+
+				&.is-valid span {
+					color: #000;
+					background: #9d9;
+				}
+
+				&.is-invalid input:checked + span {
+					background: #f87;
+					color: #fff;
+					animation: shake 0.5s ease;
+				}
+			}
+		}
+
+		.hint {
+			text-align: center;
+
+			span {
+				background: rgba(#000, 0.05);
+				padding: 2rem 3rem;
+				margin: 5rem 0;
+				font-size: 1.5rem;
+				line-height: 1.2;
+				border-radius: 1rem;
+				display: inline-flex;
+				align-items: center;
+				text-align: left;
+
+				img {
+					opacity: 0.1;
+					height: 3rem;
+					margin: 0 1rem 0 -0.5rem;
+				}
+			}
+		}
+
+		progress {
+			margin: 5rem 0;
+			appearance: none;
+			height: 8px;
+			display: block;
+			border-radius: 1rem;
+			overflow: hidden;
+			width: 100%;
+			box-sizing: border-box;
+			background: rgba(#000, 0.025);
+			border: 0;
+
+			&::-webkit-progress-value,
+			&::-moz-progress-bar {
+				background: #7ABD7E;
+				transition: background 2s linear;
+			}
+
+			&.hurry-3::-webkit-progress-value,
+			&.hurry-3::-moz-progress-bar {
+				background: #8CD47E;
+			}
+
+			&.hurry-2::-webkit-progress-value,
+			&.hurry-2::-moz-progress-bar {
+				background: #F8D66D;
+			}
+
+			&.hurry-1::-webkit-progress-value,
+			&.hurry-1::-moz-progress-bar {
+				background: #FF6961;
+			}
+		}
+	}
+
+	.results {
+		.score {
+			text-align: center;
+			font-size: 4rem;
+			font-family: 'Barlow Condensed', sans-serif;
+			margin: 5rem;
+
+			h3 { display: none; }
+			strong {
+				font-size: 25rem;
+				font-weight: 600;
+			}
+		}
+
+		.time {
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		.tags {
+			margin: 5rem 0;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			span {
+				display: inline-block;
+				padding: 1.5rem 2rem;
+				border-radius: 0.5rem;
+				margin: 0.5rem;
+			}
+
+			.level { background: rgba(#F8D66D, 0.3)}
+			.topic { background: rgba(#7d7, 0.3); }
+		}
+	}
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
