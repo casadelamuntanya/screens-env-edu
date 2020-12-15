@@ -2,11 +2,21 @@
 	<section class="quiz">
 		<!-- RESULT -->
 		<div v-if="finished" class="results">
-			<h3>🎉 Hooray!</h3>
-			<p>Your score: {{ score }} / 10</p>
-			<p>You needed {{ elapsed }}s to complete</p>
-			<p>
-				<button @click="reset">Try again</button>
+			<div class="score">
+				<h3>{{ $t('quiz.score') }}</h3>
+				<strong>{{ score }}</strong> / {{ config.QUESTION_COUNT }}
+			</div>
+			<i18n tag="p" class="time" path="quiz.time_needed">
+				<template #time>{{ elapsed }}</template>
+			</i18n>
+			<p class="tags">
+				<span class="level">{{ $t(`quiz.levels.${selectedLevel}`) }}</span>
+				<span v-for="topic in selectedTopic" :key="topic" class="topic">
+					{{ $t(`quiz.topics.${topic}`) }}
+				</span>
+			</p>
+			<p class="replay">
+				<button @click="reset">{{ $t('quiz.replay') }}</button>
 			</p>
 		</div>
 
