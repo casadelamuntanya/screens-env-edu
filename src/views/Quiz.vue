@@ -100,7 +100,11 @@ export default {
 	},
 	computed: {
 		questions() {
-			const filter = ({ level, topic }) => level === this.selectedLevel && this.selectedTopic.includes(topic);
+			if (!this.readyToStart) return [];
+			const filter = ({ level, topic }) => (
+				level === this.selectedLevel
+				&& this.selectedTopic.includes(topic)
+			);
 			return shuffle(questions.filter(filter)).slice(0, config.QUESTION_COUNT);
 		},
 		question() {
