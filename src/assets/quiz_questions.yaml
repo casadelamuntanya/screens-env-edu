@@ -1,7 +1,7 @@
 # FLORA I FAUNA 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 - question: Quin d'aquests animals té banyes en forma de ganxo?
   valid: Isard
-  hint: Aquest animal es desplaça amb molta agilitat en terrenys verticals rocosos i en tarteres, comptant les anelles de les banyes podem conèixer l'edat de l'animal.
+  hint: Es desplaça amb molta agilitat en terrenys verticals rocosos i en tarteres. Comptant les anelles de les banyes podem conèixer l'edat de l'animal.
   invalid:
     - Guineu
     - Mufló
@@ -16,7 +16,7 @@
 
 - question: Quin d'aquests animals menja ossos?
   valid: Trencalòs
-  hint: Aquest animal trenca els ossos dels animals morts deixant-los caure sobre unes pedres per menjar-ne la medul·la; també es pot empassar ossos sencers petits
+  hint: Trenca els ossos dels animals morts deixant-los caure sobre unes pedres per menjar-ne la medul·la. També es pot empassar ossos petits sencers.
   invalid:
     - Àguila
     - Pardal
@@ -31,7 +31,7 @@
 
 - question: Quin d'aquests animals canvia de color segons l'estació?
   valid: Ermini
-  hint: aquest animal viu en tarteres on es desplaça amb molta agilitat gràcies a un esquelet molt flexible. El canvi de color és una estratègia de camuflatge - a l'hivern (blanc) es confon amb la neu com a l'estiu, amb les pedres (marronós)
+  hint: Viu en tarteres on es desplaça amb molta agilitat gràcies a un esquelet molt flexible. El canvi de color és una estratègia de camuflatge - a l'hivern (blanc) es confon amb la neu i a l'estiu (marronós) amb les pedres.
   invalid:
     - Isard
     - Grandalla
@@ -46,7 +46,7 @@
 
 - question: Quin d'aquests animals és un mamífer?
   valid: Marmota
-  hint: Els pares es cuiden molt de les seves cries que protegeixen dels depredadors, quan xiulen s'amaguen de cop en un cau on hibernarà amb tota la família
+  hint: Els pares es cuiden molt de les seves cries que protegeixen dels depredadors. Quan xiulen s'amaguen de cop en un cau on hibernen amb tota la família.
   invalid:
     - Vidriol
     - Serp
@@ -61,7 +61,7 @@
 
 - question: Quin grup d'animals són de sang freda?
   valid: Rèptils
-  hint: Tenen escates, rapten i s'arrosseguen. Mengen generalment insectes, els més grans, petits rosegadors
+  hint: Tenen escates, rapten i s'arrosseguen. Mengen generalment insectes, els més grans poden menjar petits rosegadors.
   invalid:
     - Mamífers
     - Ocells
@@ -74,9 +74,9 @@
   level: easy
   topic: flora_fauna
 
-- question: Que "menja" el cabirol?
+- question: Que menja el cabirol?
   valid: Herba
-  hint: Tot i que el cabirol és un animal forestal ha de desplaçar-se als prats montans i subalpins per nodrir-se.
+  hint: Tot i que el cabirol és un animal forestal ha de desplaçar-se als prats montans i subalpins per alimentar-se.
   invalid:
     - Plàtans
     - Caragols
@@ -91,7 +91,7 @@
 
 - question: Quina és la flor que representa Andorra?
   valid: Grandalla
-  hint: Els seus sis "pètals" representen les sis parròquies que en el seu temps hi havia a Andorra
+  hint: Els seus sis pètals representen les sis parròquies que en el seu temps hi havia a Andorra.
   invalid:
     - Lliri
     - Rosella
@@ -106,7 +106,7 @@
 
 - question: Quina flor té forma de coixinet?
   valid: Androsace imbricada
-  hint: És la planta característica de les roques àcides entre els 1500-3000 metres. La seva forma en coixinet li permet resistir al fred i al vent
+  hint: És la planta característica de les roques àcides entre els 1500-3000 metres. La seva forma en coixinet li permet resistir al fred i al vent.
   invalid:
     - Gerani
     - Lotus
@@ -121,7 +121,7 @@
 
 - question: Quina és la planta preferida que menja l'Isard?
   valid: Regalèssia de muntanya
-  hint: La trobem als prats alpins i subalpins. És de la família dels trèvols. Les seves arrels tenen un gust particular característic
+  hint: La trobem als prats alpins i subalpins. És de la família dels trèvols. Les seves arrels tenen un gust particular característic.
   invalid:
     - Bossa de pastor
     - Nigretella
@@ -136,7 +136,7 @@
 
 - question: Quina d'aquestes flors "menja" insectes?
   valid: Dròsera o "herba de la gota"
-  hint: Quan l'insecte toca els filaments de la fulla, aquesta es va tancant a poc a poc; la planta digereix la part interna de l'insecte i només deixa la quitina, substància massa dura, "esquelet" extern de l'insecte.
+  hint: Quan l'insecte toca els filaments de la fulla, aquesta es va tancant a poc a poc. La planta digereix la part interna de l'insecte i només deixa la quitina, substància massa dura, que és l'"esquelet" extern de l'insecte.
   invalid:
     - Violeta
     - Perdiu
@@ -146,12 +146,13 @@
     - Gerd
     - Matafoc
     - Mosquit
-
+  level: easy
+  topic: flora_fauna
 
 # FLORA I FAUNA 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-- question: Com se li diu, de forma genèrica, el lloc on viu, menja i dorm un animal?
+- question: Com es diu, de forma genèrica, el lloc on viu, menja i dorm un animal?
   valid: Hàbitat
-  hint: l'entorn on viu un Ésser viu, on es desplaça, es nodreix i es reprodueix.
+  hint: És l'entorn on viu un ésser viu, on es desplaça, es nodreix i es reprodueix.
   invalid:
     - Boscos
     - Prats
@@ -164,9 +165,9 @@
   level: medium
   topic: flora_fauna
 
-- question: Quins són els animals que tenen estructures òssies?
+- question: Quins animals tenen estructures òssies?
   valid: Vertebrats
-  hint: Poden ser mamífers, ocells, rèptils, amfibis i peixos
+  hint: Poden ser mamífers, ocells, rèptils, amfibis i peixos.
   invalid:
     - Invertebrats
     - Bacteris
@@ -181,7 +182,7 @@
 
 - question: Quin d'aquests animals és de sang calenta?
   valid: Marta
-  hint: La seva temperatura corporal és constant, no varia si canvia la temperatura exterior
+  hint: La seva temperatura corporal és constant, no varia si canvia la temperatura exterior.
   invalid:
     - Llangardaix
     - Truita
@@ -196,7 +197,7 @@
 
 - question: Quin animal canta obrint les plomes de la cua?
   valid: Gall fer
-  hint: Els mascles competeixen per les femelles en llocs puntuals anomenats "cantaders"
+  hint: Els mascles competeixen per les femelles en llocs puntuals anomenats "cantaders".
   invalid:
     - Perdiu blanca
     - Gat salvatge
@@ -211,7 +212,7 @@
 
 - question: Quin d'aquests animals viu dins l'aigua?
   valid: Truita
-  hint: Remunta els rius de muntanya saltant fora de l'aigua per capturar insectes. Pot arribar a menjar animals de la seva mateixa espècie ("canibalisme")
+  hint: Remunta els rius de muntanya saltant fora de l'aigua per capturar insectes. Pot arribar a menjar animals de la seva mateixa espècie (canibalisme)
   invalid:
     - Salamandra
     - Tritó pirinenc
@@ -226,7 +227,7 @@
 
 - question: Quin arbust trobem a la zona obaga de la muntanya?
   valid: Abarset
-  hint: Arbust de branques tortuoses, la seva flor és de color fúcsia molt vistosa. Resisteix al fred cobert per la neu a l'hivern. Les abelles busquen el seu nèctar.
+  hint: Té branques tortuoses i la seva flor és de color fúcsia molt vistosa. Resisteix al fred cobert per la neu a l'hivern. Les abelles busquen el seu nèctar.
   invalid:
     - Bàlec
     - Ginebró
@@ -241,7 +242,7 @@
 
 - question: Quina d'aquestes flors és molt tòxica?
   valid: Tora blava
-  hint: Planta de gran mida força alta amb les flors de color blau o violeta intens, en forma de casc
+  hint: Planta de gran mida, força alta, amb les flors de color blau o violeta intens en forma de casc.
   invalid:
     - Cotonera
     - Dròsera
@@ -256,7 +257,7 @@
 
 - question: Quina d'aquestes flors té les fulles recobertes d'una substància enganxosa anomenada "mucílag"?
   valid: Viola d'aigua
-  hint: Les seves fulles són de color groc fluorescent
+  hint: Les seves fulles són de color groc fluorescent.
   invalid:
     - Dròsera
     - Bossa del pastor
