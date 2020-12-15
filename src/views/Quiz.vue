@@ -26,7 +26,7 @@
 				<span v-if="step.hinted">{{ question.hint }}</span>
 				<span v-else @click="step.hinted = true">
 					<img src="../assets/vectors/bulb.svg">
-					Vull una pista!
+					{{ $t('quiz.show_hint') }}
 				</span>
 			</p>
 			<progress
@@ -37,26 +37,30 @@
 
 		<!-- CONFIG -->
 		<div v-else class="config">
-			<h1>Quiz</h1>
+			<h1>{{ $t('quiz.title') }}</h1>
 			<fieldset class="selector selector--level">
-				<legend>Selecciona el teu nivell</legend>
+				<legend>{{ $t('quiz.select_level') }}</legend>
 				<label v-for="level in levels" :key="level">
 					<input v-model="selectedLevel" :value="level" type="radio">
 					<span :class="`selector__${level}`">
-						{{ level }}
+						{{ $t(`quiz.levels.${level}`) }}
 					</span>
 				</label>
 			</fieldset>
 			<fieldset class="selector selector--topic">
-				<legend>Selecciona les temàtiques</legend>
+				<legend>{{ $t('quiz.select_topic') }}</legend>
 				<label v-for="topic in topics" :key="topic">
 					<input v-model="selectedTopic" :value="topic" type="checkbox">
 					<span :class="`selector__${topic}`">
-						{{ topic }}
+						{{ $t(`quiz.topics.${topic}`) }}
 					</span>
 				</label>
 			</fieldset>
-			<button @click="start">Començar</button>
+			<p class="controls">
+				<button :disabled="!readyToStart" @click="start">
+					{{ $t('quiz.play') }}
+				</button>
+			</p>
 		</div>
 	</section>
 </template>
@@ -86,7 +90,6 @@ export default {
 	},
 	computed: {
 		questions() {
-			if (!this.selectedLevel || !this.selectedTopic.length) return [];
 			const filter = ({ level, topic }) => level === this.selectedLevel && this.selectedTopic.includes(topic);
 			return shuffle(questions.filter(filter)).slice(0, config.QUESTION_COUNT);
 		},
@@ -98,6 +101,9 @@ export default {
 		},
 		hurryLevel() {
 			return Math.ceil(((this.countdown * 100) / config.COUNTDOWN[this.selectedLevel]) / 25);
+		},
+		readyToStart() {
+			return this.selectedLevel && this.selectedTopic.length;
 		},
 	},
 	watch: {
