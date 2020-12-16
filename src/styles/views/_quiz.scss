@@ -41,13 +41,15 @@
 		}
 
 		label {
+			vertical-align: top;
+
 			input { display: none; }
 			span {
 				display: inline-block;
 				box-sizing: border-box;
 				background: #fff;
 				height: 15rem;
-				width: 12rem;
+				width: 13rem;
 				margin: 1rem;
 				border-radius: 1rem;
 				background-size: cover;
