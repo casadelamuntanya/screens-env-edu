@@ -273,7 +273,7 @@
 
 - question: Quin d'aquests animals viu al bosc?
   valid: Marta
-  hint: És un animal molt discret que amagant-se als arbres. Té un pelatge beix al pit i una cua molt gran
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua molt gran
   invalid:
     - Ermini
     - Almesquera
@@ -301,8 +301,9 @@
   level: easy
   topic: boscos
 
+
 # ECOSISTEMES 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-- question: Que mengen els animals predadors en una cadena alimentària?
+- question: Què mengen els animals predadors en una cadena alimentària?
   valid: Carn
   hint: Una cadena alimentària (tròfica) està formada uns éssers vius que depenen els uns dels altres per alimentar-se (plantes, herbívors, carnívors, detritívors)
   invalid:
@@ -377,7 +378,7 @@
   level: easy
   topic: ecosistemes
 
-- question: A quin hàbitat de muntanya trobem la saxífraga media alpina?
+- question: A quin hàbitat de muntanya trobem la saxífraga media?
   valid: Roques calcàries
   hint: Es una planta característica d'aquest hàbitat. Té forma de coixinet per aguantar condicions climatològiques extremes
   invalid:
@@ -451,6 +452,158 @@
     - Es congela
   level: easy
   topic: ecosistemes
+
+
+# MEDI FÍSIC I ANTRÒPIC 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què són els factors biòtics?
+  valid: Components i organismes vius
+  hint: Són el contrari que els factors abiòtics (factors físics o químics, que no és viu).
+  invalid:
+    - Temperatura
+    - Hàbitats
+    - Allaus
+    - Humitat
+    - Carreteres
+    - Roques i tarteres
+    - Neu
+    - vent
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quin d'aquests elements no és abiòtic?
+  valid: Cuc
+  hint: És un element viu
+  invalid:
+    - Clima
+    - Temperatura
+    - Vent
+    - Calor
+    - Humitat
+    - Fred
+    - Pluja
+    - Aire
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Un factor ecològic important per la vegetació
+  valid: Humitat
+  hint: Factor ecològic, abiòtic, que afecta el creixement de les plantes o la vida dels amfibis
+  invalid:
+    - Bosc
+    - Pi negre
+    - Mollera
+    - Roure
+    - Marta
+    - Ós
+    - Carnívor
+    - Depredador
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: A quina zona trobem cada dia el major escalfament?
+  valid: Solana
+  hint: Zona on creixen les landes d'escobar i ginebró
+  invalid:
+    - Obaga
+    - Ombra
+    - Humitat
+    - Sequera
+    - Temperatura
+    - Glacera
+    - Neu
+    - Abarsetar
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: On trobem l'abarsetar?
+  valid: Obaga
+  hint: S'hi conserva millor a l'hivern sota la neu, ja que és una zona amb menys Sol
+  invalid:
+    - Solana
+    - Xafogor
+    - Frescor
+    - Humitat
+    - Temperatura
+    - Glacera
+    - Arcalís
+    - Prats
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quina proposta afavoreix la conservació dels ecosistemes?
+  valid: Parc natural
+  hint: Lloc on l'objectiu principal és la conservació i la protecció del patrimoni natural
+  invalid:
+    - Pistes d'esquí
+    - Deixalles
+    - Trepitjament
+    - Turisme massiu
+    - Assecat d'una mollera
+    - Contaminació de l'aire
+    - Consumisme
+    - Autopista
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quin sector econòmic productiu depèn més del clima a les nostres muntanyes?
+  valid: Agrícola
+  hint: La producció de vegetals depèn molt de les condicions meteorològiques
+  invalid:
+    - Indústria
+    - Asserradores
+    - Esquí
+    - Financer
+    - Comerç
+    - Mines
+    - Esport
+    - Turisme
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: De cara al medi ambient i als ramaders, perquè hem de seguir els camins marcats i respectar les tanques?
+  valid: Per limitar els impactes a la flora, la fauna, el paisatge, i respectar el maneig del bestiar.
+  hint: Forma part del nostre comportament cívic
+  invalid:
+    - Per ser més feliços
+    - Per no relliscar i caure
+    - Per deixar el pas a les bicicletes
+    - Per fer menys soroll en caminar
+    - Per no perdre'ns
+    - Per arribar més ràpid
+    - Per saltar els rius
+    - Per pujar als arbres
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Perquè no s'han de collir plantes ni destorbar els animals?
+  valid: Per no pertorbar l'equilibri fràgil dels ecosistemes
+  hint: Preservar la natura ens farà sentir millors persones
+  invalid:
+    - Per no tenir por
+    - Per fer fugir els predadors
+    - Per la nostra mascota
+    - Perquè n'hi ha massa
+    - Per no cansar-se
+    - Perquè no ens agraden
+    - Perquè no podríem tornar mai més
+    - Collir plantes no canvia res
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Què hem de recollir i tornar a baixar quan anem a la muntanya?
+  valid: Les nostres deixalles
+  hint: No s'ha de deixar res a la muntanya que no hi fos abans de la nostra arribada
+  invalid:
+    - Terra
+    - Arbres
+    - Flors
+    - Petits animals
+    - Pedres
+    - Molsa
+    - Tora
+    - Pols
+  level: easy
+  topic: medi_fisic_antropic
 
 
 # FLORA I FAUNA 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -605,6 +758,168 @@
   topic: flora_fauna
 
 
+# BOSCOS 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Que provoca l'acció de la processionària als boscos?
+  valid: Possible mort dels arbres per defoliació
+  hint: Les erugues es protegeixen en uns bossots als pins
+  invalid:
+    - Pluges àcides que debiliten el bosc
+    - Colors a la tardor
+    - Més bolets
+    - Cavitats als troncs
+    - Creixement de l'arbre
+    - Humitat al bosc
+    - Més líquens als troncs
+    - Augment de la producció de pinyes
+  level: medium
+  topic: boscos
+
+- question: Quants cicles vitals fa l'eruga de la processionària?
+  valid: Cinc estadis
+  hint: Després d'acabar els cicles vitals, s'enterra i forma una crisàlide per transformar-se en papallona
+  invalid:
+    - 6 estadis
+    - 3 estadis
+    - No té cap cicle vital
+    - 1 estadi
+    - 4 estadis
+    - 2 estadis
+    - 10 estadis
+    - 7 estadis
+  level: medium
+  topic: boscos
+
+- question: Funció que no correspon als forats grans i ovalats que podem trobar a alguns pins, avets o trèmols
+  valid: Prevenció de l'incendi
+  hint: Els picots realitzen forats als troncs d'alguns arbres, la parella pot tornar-hi cada any per la reproducció o els deixa.
+  invalid:
+    - Niu de picot
+    - Àrea d'alimentació dels picots joves
+    - Niu de mussol pirinenc
+    - Niu de mallerengues
+    - Aixopluc per rosegadors
+    - Senyal per la protecció d'una espècie
+    - Reclam pels predadors
+    - Punt dèbil per l'arbre
+  level: medium
+  topic: boscos
+
+- question: Quina d'aquestes fases no forma part del cicle natural del bosc de pi negre?
+  valid: Explotació forestal
+  hint: El bosc de pi negre, com qualsevol ésser viu, també neix, creix i mor.
+  invalid:
+    - Regeneració
+    - Bardisses de regeneració alta
+    - Perxada baixa
+    - Perxada alta
+    - Bosc jove
+    - Bosc madur
+    - Bosc envellit
+    - Bosc caigut
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla caduca?
+  valid: Beç
+  hint: Als arbres de fulla caduca els hi cauen les fulles
+  invalid:
+    - Alzina
+    - Pi negre
+    - Pi roig
+    - Avet
+    - Ginebre
+    - Cedre
+    - Teix
+    - Xiprer
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla perenne?
+  valid: avet
+  hint: Als arbres de full perenne no els hi cauen les fulles
+  invalid:
+    - Moixera
+    - Beç
+    - pollancre
+    - Trèmol
+    - Salze
+    - Roure
+    - Cirerer
+    - Ametller
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests animals viu al bosc?
+  valid: Marta
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua molt gran
+  invalid:
+    - Ermini
+    - Trencalòs
+    - Voltor
+    - Àguila daurada
+    - Perdiu blanca
+    - Sargantana pallaresa
+    - Escurçó
+    - Vidriol
+    - Almesquera
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres o arbusts no es troba a l'estatge subalpí?
+  valid: Roure martinenc
+  hint: Arbre típic dels boscos submediterranis
+  invalid:
+    - Pi negre
+    - Abarset
+    - Beç
+    - Moixera de guilla
+    - Gatsalze
+    - Salze pirinenc
+    - Ginebró
+    - Avet
+    - Bruguerola
+  level: medium
+  topic: boscos
+
+- question: Quin paper no juguen els boscos?
+  valid: Faciliten la contaminació de l'aire
+  hint: El bosc procura molts serveis, se'n diuen serveis ecosistèmics
+  invalid:
+    - Producció de fusta
+    - Aixopluc per nombrosos animals
+    - Canvi en el micro clima
+    - Estoc de carbó (mitigació del canvi climàtic)
+    - Protecció del sòl
+    - Filtra la pols
+    - Limita l'erosió
+    - Limita les inundacions
+    - Acolliment del públic
+  level: medium
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és falsa?
+  valid: El cicle natural del bosc de pi negre és inferior a 100 anys
+  hint: Molts arbres forestals vieu més de 100 anys
+  invalid:
+    - El bosc no produeix només fusta
+    - El bosc és un ecosistema
+    - El límit superior del bosc correspon a l'estatge alpí
+    - El bosc pot tenir més d'una espècie d'arbres
+    - El bosc protegeix el sòl
+    - El bosc pot ser una zona d'esbarjo
+    - El bosc és una trama important del paisatge muntanyenc
+    - El bosc pot tenir més de 1000 arbres a l'hectàrea
+    - El bosc de pi negre és el bosc típic de l'estatge subalpí pirinenc
+  level: medium
+  topic: boscos
+
+
+# ECOSISTEMES 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+# MEDI FÍSIC I ANTRÒPIC 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 # FLORA I FAUNA 12 - 15 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 - question: Quin d'aquests éssers vius no és heteròtrof?
   valid: Dròsera
@@ -755,3 +1070,314 @@
     - Perdiu blanca
   level: hard
   topic: flora_fauna
+
+
+# BOSCOS 12 - 15 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Que provoca l'acció de la processionària als boscos?
+  valid: Possible mort dels arbres per defoliació
+  hint: Les erugues es protegeixen en uns bossots que elaboren als pins
+  invalid:
+    - Pluges àcides que debiliten el bosc
+    - Colors a la tardor
+    - Més bolets
+    - Cavitats als troncs
+    - Creixement de l'arbre
+    - Humitat al bosc
+    - Més líquens als troncs
+    - Augment de la producció de pinyes
+  level: hard
+  topic: boscos
+
+- question: Quants cicles vitals fa l'eruga de la processionària?
+  valid: Cinc estadis
+  hint: Després d'acabar els cicles vitals, s'enterra i forma una crisàlide per transformar-se en papallona
+  invalid:
+    - 6 estadis
+    - 3 estadis
+    - No té cap cicle vital
+    - 1 estadi
+    - 4 estadis
+    - 2 estadis
+    - 10 estadis
+    - 7 estadis
+  level: hard
+  topic: boscos
+
+- question: Quina afirmació és falsa, respecte a les cavitats de picots negres?
+  valid: Es fan en arbres de perxada alta
+  hint: Els picots realitzen forats als troncs d'alguns arbres madurs, la parella pot tornar-hi cada any per la reproducció o els deixa
+  invalid:
+    - És l'entrada del niu
+    - És l'àrea d'alimentació dels picots joves
+    - Pot ser el niu del mussol pirinenc
+    - Pot ser el niu de la mallerenga
+    - És aixopluc per rosegadors
+    - És senyal per la protecció d'una espècie
+    - És un reclam pels predadors
+    - És un punt dèbil per l'arbre
+  level: hard
+  topic: boscos
+
+- question: Quina és la fase inicial del cicle natural del pi negre?
+  valid: La regeneració
+  hint: Derivada de les llavors caigudes a terra.
+  invalid:
+    - Bardisses de petits arbusts
+    - Forta acumulació de biomassa de 130 a 200 anys
+    - Bosc obert amb arbres morts i caiguts de 200 a 350 anys
+    - Bosc madur amb densitat encara alta de 70 a 130 anys
+    - Bosc de roure
+    - Bosc de beç
+    - Bosc caigut
+    - Bosc cremat
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla caduca?
+  valid: Beç
+  hint: Li cauen les fulles
+  invalid:
+    - Alzina
+    - Pi negre
+    - Pi roig
+    - Avet
+    - Ginebró
+    - Cedre
+    - Teix
+    - Xiprer
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla perenne?
+  valid: Alzina
+  hint: No li cauen les fulles
+  invalid:
+    - Moixera de guilla
+    - Beç
+    - Pollancre
+    - Trèmol
+    - Gatsalze
+    - Roure de fulla gran
+    - Cirerer
+    - Om
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests animals viu al bosc?
+  valid: Marta
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua
+  invalid:
+    - Ermini
+    - Trencalòs
+    - Voltor
+    - Àguila daurada
+    - Perdiu blanca
+    - Sargantana pallaresa
+    - Escurçó
+    - Vidriol
+    - Almesquera
+  level: hard
+  topic: boscos
+
+- question: Quin paper no juga el bosc?
+  valid: Facilita la contaminació de l'aire
+  hint: El bosc procura molts serveis, se'n diuen serveis ecosistèmics
+  invalid:
+    - Producció de fusta
+    - Aixopluc per nombrosos animals
+    - Canvi en el microclima
+    - Estoc de carbó (mitigació del canvi climàtic)
+    - Protecció del sol
+    - Filtra la pols
+    - Limita l'erosió
+    - Limita les inundacions
+    - Acolliment del públic
+  level: hard
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és correcta?
+  valid: Els boscos vells presenten una gran biodiversitat
+  hint: El bosc és un sistema complex d'éssers vius
+  invalid:
+    - El bosc no és un ecosistema
+    - El bosc ha generat llegendes populars
+    - La sargantana pallaresa és un animal forestal
+    - No es troben líquens al bosc
+    - El picot negre fa el seu niu per sobre les branques més altes dels pins
+    - El beç no és un arbre pioner
+    - El bosc no protegeix mai de les allaus
+    - El bosc no juga cap paper de filtre, tampoc limita l'erosió
+    - L'abarset és un arbust que indica la solana
+  level: hard
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és falsa?
+  valid: El cicle natural del bosc de pi negre és inferior a 100 anys
+  hint: Molts arbres forestals viuen més de 100 anys
+  invalid:
+    - El bosc no produeix només fusta
+    - El bosc és un ecosistema
+    - El límit superior del bosc correspon a l'estatge alpí
+    - El bosc pot tenir més d'una espècie d'arbres
+    - El bosc protegeix el sòl
+    - Un bosc pot ser una zona d'esbarjo, quan sigui accessible
+    - El bosc és una trama important del paisatge muntanyenc
+    - Un bosc pot tenir més de 1000 arbres a l'hectàrea
+    - El bosc de pi negre és el bosc típic de l'estatge subalpí pirinenc
+  level: hard
+  topic: boscos
+
+
+# ECOSISTEMES 12 - 15 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quina és la bona proposició de cadena tròfica (des baix a dalt)
+  valid: Productors, consumidors primaris, predadors, superpredadors, detritívors
+  hint: És una representació gràfica que mostra les relacions alimentàries de qui menja a qui
+  invalid:
+    - Superdepredadors, predadors, superpredadors, productors
+    - Productors, consumidors primaris, superdepredadors, detritívors
+    - Productors, consumidors primaris, consumidors secundaris, superdepredadors, consumidors terciaris
+    - Productors, consumidors terciaris, consumidors primaris, consumidors secundaris, detritívors
+    - Consumidors primaris, productors, superdepredadors, detritívors, predadors
+    - Detritívors, superdepredadors, predadors, consumidors primaris, productors
+    - Predadors, productors, consumidors primaris, consumidors secundaris, superdepredadors
+    - Consumidors primaris, productors, superdepredadors, predadors, detritívors
+  level: hard
+  topic: ecosistemes
+
+- question: Com es pot considerar l'àguila daurada en una cadena tròfica?
+  valid: Superpredador
+  hint: Es situa a la part alta de la cadena tròfica
+  invalid:
+    - Predador
+    - Ocell
+    - Rapinyaire
+    - Detritívor
+    - Insectívor
+    - Carronyaire
+    - Productor
+    - Volant
+  level: hard
+  topic: ecosistemes
+
+- question: En quin ecosistema, que estigui en bona salut, no trobem predadors?
+  valid: Cap
+  hint: La cadena tròfica es reprodueix en tots els ecosistemes
+  invalid:
+    - Estanys
+    - Rius
+    - Sòl
+    - Aire
+    - Prats alpins
+    - Boscos
+    - Zones humides
+    - Landes
+  level: hard
+  topic: ecosistemes
+
+- question: Quin parell d'ambients presenten la més gran diversitat biològica?
+  valid: Zones humides i boscos vells
+  hint: Són hàbitats madurs
+  invalid:
+    - Prats alpins i roques
+    - Roques i tarteres
+    - Bosc jove i rierol
+    - Zones humides i tarteres
+    - Landes i prats montans
+    - Tarteres i prats alpins
+    - Bosc de ribera i rierol
+    - Estany i rierols
+  level: hard
+  topic: ecosistemes
+
+- question: Quin ecosistema no es troba a Andorra?
+  valid: Manglar
+  hint: Format per arbres que toleren la sal
+  invalid:
+    - Bosc subalpí
+    - Prat alpí
+    - Roques calcàries
+    - Bosc submediterrani
+    - Mollera
+    - Estany
+    - Riu
+    - Landa
+  level: hard
+  topic: ecosistemes
+
+- question: Quin d'aquests animals viu a zones humides?
+  valid: Salamandra
+  hint: És inconfusible pels seus colors vius
+  invalid:
+    - Vidriol
+    - Tritó
+    - Granota roja
+    - Gripau
+    - Almesquera
+    - Truita
+    - Escurçó
+    - Sargantana pallaresa
+  level: hard
+  topic: ecosistemes
+
+- question: Ecosistema cap d'una sèrie dinàmica de la vegetació a l'estatge subalpí
+  valid: Bosc de pi negre
+  hint: S'hi troben els arbres que viuen a més alçada
+  invalid:
+    - Prats alpins
+    - Roques i tarteres
+    - Molleres
+    - Bosc de pi roig
+    - Prat de dall
+    - Landa d'abarset
+    - Prat de gespit
+    - Landa de ginebró
+  level: hard
+  topic: ecosistemes
+
+- question: A quins estatges es sol trobar l'alzina?
+  valid: Mediterrani i supramediterrani (montà)
+  hint: El bosc d'alzina està ben representat al sud del país i algunes solanes de la part central
+  invalid:
+    - Alpí
+    - Subalpí
+    - Montà i subalpí
+    - Subalpí i alpí
+    - Mediterrani
+    - Supramediterrani
+    - Montà i supramediterrani
+    - Montà
+  level: hard
+  topic: ecosistemes
+
+- question: Quin no és un ecosistema?
+  valid: Falgueres
+  hint: L'ecosistema està format per un medi físic i uns éssers vius que es relacionen entre ells
+  invalid:
+    - Bosc de roure
+    - Bosc de pi negre
+    - Landa de ginebró
+    - Mollera
+    - Estany
+    - Prat alpí
+    - Roques
+    - Sòl bru àcid
+  level: hard
+  topic: ecosistemes
+
+- question: Quin element no circula (en sentit ampli de la paraula) en un ecosistema?
+  valid: Plantes
+  hint: En un ecosistema, els elements químics tenen una vida cíclica, els éssers vius es desplacen
+  invalid:
+    - Matèria
+    - Carbó
+    - Aigua
+    - Nitrogen
+    - Animals
+    - Energia
+    - Microorganismes
+    - Predadors
+  level: hard
+  topic: ecosistemes
+
+
+# MEDI FÍSIC I ANTRÒPIC 12 - 15 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::
