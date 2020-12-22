@@ -1,0 +1,5 @@
+# Exclude IE to allow Mapbox proper build
+# https://github.com/parcel-bundler/parcel/issues/1128
+
+defaults
+not IE > 0

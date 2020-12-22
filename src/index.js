@@ -4,6 +4,7 @@ import router from './router';
 import i18n from './i18n';
 
 import 'reset-css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import './styles/index.scss';
 
 /* eslint-disable no-new */

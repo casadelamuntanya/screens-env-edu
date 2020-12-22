@@ -30,3 +30,13 @@ quiz:
     - ecosistemes
     - boscos
     - medi_fisic_antropic
+
+map:
+  layer: mapbox://styles/mapbox/satellite-v9
+  disable:
+    - scrollZoom
+    - dragPan
+    - dragRotate
+    - doubleClickZoom
+    - touchZoomRotate
+    - boxZoom
