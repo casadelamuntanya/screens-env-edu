@@ -20,6 +20,7 @@ airtable:
       - bearing
       - alt
       - estatges
+      - related
 
 quiz:
   HINT_SCORE: 0.5       # Punctuation for hinted answer
