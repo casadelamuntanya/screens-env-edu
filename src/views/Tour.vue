@@ -1,14 +1,17 @@
 <template>
 	<section class="tour">
 		<div id="map" />
-		<div v-if="waypoint" class="tour__overlay">
+		<div
+			v-if="waypoint"
+			v-swipe:200.left.right="move"
+			class="tour__overlay">
 			<h1>{{ waypoint.id }}</h1>
 			<p>{{ waypoint.description }}</p>
 			<scroller v-slot="{ item: related }" :items="waypoint.related">
 				<super-card
 					:item="related"
 					:class="{ 'active': active === related.name }"
-					@click.native="activate(related)" />
+					@click.native.stop="activate(related)" />
 				<div class="fade" @click.stop="activate()" />
 			</scroller>
 		</div>
@@ -20,10 +23,12 @@ import { Map } from 'mapbox-gl';
 import airtable from '../airtable';
 import Scroller from '../components/Scroller.vue';
 import SuperCard from '../components/SuperCard.vue';
+import Swipe from '../utils/directive.swipe';
 import config from '../config.yaml';
 
 export default {
 	name: 'Tour',
+	directives: { Swipe },
 	components: { Scroller, SuperCard },
 	data() {
 		return {
@@ -58,7 +63,6 @@ export default {
 			accessToken: process.env.MAPBOX_ACCESS_TOKEN,
 		});
 		config.map.disable.forEach(interaction => this.map[interaction].disable());
-		this.map.on('click', () => { this.step = (this.step + 1) % this.waypoints.length; });
 		this.map.on('load', () => { this.fetchWaypoints(); });
 	},
 	methods: {
@@ -89,6 +93,10 @@ export default {
 		},
 		activate({ name } = {}) {
 			this.active = name;
+		},
+		move({ direction }) {
+			const index = this.step + (direction === 'left' ? 1 : -1);
+			this.step = (this.waypoints.length + index) % this.waypoints.length;
 		},
 	},
 };
