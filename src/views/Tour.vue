@@ -1,13 +1,15 @@
 <template>
 	<section class="tour">
 		<div id="map" />
-		<div v-if="waypoint">
-			<h1>{{ waypoint.name }}</h1>
+		<div v-if="waypoint" class="tour__overlay">
+			<h1>{{ waypoint.id }}</h1>
 			<p>{{ waypoint.description }}</p>
-			<scroller v-slot="{ item }" :items="waypoint.related">
-				<card :item="item" attribution @click.native.stop>
-					<h3>{{ item.name }}</h3>
-				</card>
+			<scroller v-slot="{ item: related }" :items="waypoint.related">
+				<super-card
+					:item="related"
+					:class="{ 'active': active === related.name }"
+					@click.native="activate(related)" />
+				<div class="fade" @click.stop="activate()" />
 			</scroller>
 		</div>
 	</section>
@@ -17,17 +19,18 @@
 import { Map } from 'mapbox-gl';
 import airtable from '../airtable';
 import Scroller from '../components/Scroller.vue';
-import Card from '../components/Card.vue';
+import SuperCard from '../components/SuperCard.vue';
 import config from '../config.yaml';
 
 export default {
 	name: 'Tour',
-	components: { Scroller, Card },
+	components: { Scroller, SuperCard },
 	data() {
 		return {
 			map: undefined,
 			waypoints: undefined,
 			step: undefined,
+			active: undefined,
 		};
 	},
 	computed: {
@@ -83,6 +86,9 @@ export default {
 					nextPage();
 				});
 			return linked;
+		},
+		activate({ name } = {}) {
+			this.active = name;
 		},
 	},
 };

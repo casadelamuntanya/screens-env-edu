@@ -1,4 +1,6 @@
 .tour {
+	color: #fff;
+
 	#map {
 		position: fixed;
 		top: 0;
@@ -6,6 +8,12 @@
 		width: 100%;
 		height: 100%;
 		z-index: 0;
+	}
+
+	&__overlay {
+		position: relative;
+		height: 100vh;
+		padding: 1px;
 	}
 
 	.scroller {
@@ -17,17 +25,31 @@
 		padding: 2rem 0;
 	}
 
-	.card {
-		box-sizing: border-box;
-		box-shadow: 0 0 20px 0 rgba(#000, 0.6);
-		overflow: hidden;
-		border-radius: 3px;
-		position: relative;
-		outline: 0;
+	.super-card:not(.active) {
 		height: 370px;
 		width: 270px;
-		font-size: 2.75rem;
 
+		h2 { @extend h3; }
+
+		.super-card__header { padding: 0; }
+		.expandable { display: none; }
 		figcaption { display: none; }
+	}
+
+	.super-card.active {
+		z-index: 2;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		height: 70%;
+		width: 80%;
+		transform: translate(-50%, -50%);
+
+		h2 { font-size: 7rem; }
+
+		.fade {
+			top: -15vh;
+			left: -10vw;
+		}
 	}
 }

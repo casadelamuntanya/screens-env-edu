@@ -13,7 +13,7 @@ airtable:
   tour:
     view: Tour
     fields:
-      - name
+      - id
       - lat
       - lon
       - zoom
