@@ -10,6 +10,18 @@ airtable:
       - _children
       - _related
       - media
+  tour:
+    view: Tour
+    fields:
+      - name
+      - description
+      - lat
+      - lon
+      - zoom
+      - bearing
+      - alt
+      - estatges
+      - related
 
 quiz:
   HINT_SCORE: 0.5       # Punctuation for hinted answer
@@ -30,3 +42,14 @@ quiz:
     - ecosistemes
     - boscos
     - medi_fisic_antropic
+
+map:
+  layer: mapbox://styles/mapbox/satellite-v9
+  duration: 6000
+  disable:
+    - scrollZoom
+    - dragPan
+    - dragRotate
+    - doubleClickZoom
+    - touchZoomRotate
+    - boxZoom
