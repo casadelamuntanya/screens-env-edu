@@ -25,6 +25,7 @@ import config from '../config.yaml';
 import { normalize } from '../utils/utils.string';
 import Swipe from '../utils/directive.swipe';
 
+/* eslint-disable no-underscore-dangle */
 export default {
 	name: 'Concepts',
 	directives: { Swipe },
