@@ -2,6 +2,7 @@
 	<section class="concepts">
 		<super-card
 			v-if="selected"
+			v-swipe:200.right="goBack"
 			:item="selected"
 			patheable
 			@select="select" />
@@ -22,9 +23,11 @@ import SuperCard from '../components/SuperCard.vue';
 import airtable from '../airtable';
 import config from '../config.yaml';
 import { normalize } from '../utils/utils.string';
+import Swipe from '../utils/directive.swipe';
 
 export default {
 	name: 'Concepts',
+	directives: { Swipe },
 	components: { Card, SuperCard },
 	data() {
 		return {
@@ -67,6 +70,9 @@ export default {
 		},
 		getPath([id] = []) {
 			return id ? [...this.getPath(this.concepts[id]._parent), this.concepts[id]] : [];
+		},
+		goBack() {
+			this.history.pop();
 		},
 	},
 };
