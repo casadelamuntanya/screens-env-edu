@@ -5,8 +5,11 @@
 			v-if="waypoint"
 			v-swipe:200.left.right="move"
 			class="tour__overlay">
-			<h1>{{ waypoint.id }}</h1>
-			<p>{{ waypoint.description }}</p>
+			<header>
+				<h3>{{ waypoint.estatges | serialize }}</h3>
+				<h1>{{ waypoint.name }}</h1>
+				<p>{{ waypoint.description }}</p>
+			</header>
 			<scroller v-slot="{ item: related }" :items="waypoint.related">
 				<super-card
 					:item="related"
@@ -30,6 +33,9 @@ export default {
 	name: 'Tour',
 	directives: { Swipe },
 	components: { Scroller, SuperCard },
+	filters: {
+		serialize: array => array.join(','),
+	},
 	data() {
 		return {
 			map: undefined,
