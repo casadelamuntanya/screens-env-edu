@@ -32,10 +32,13 @@
 					</card>
 				</scroller>
 			</div>
-			<div v-if="item.related && item.related.length" class="super-card__related">
+			<div v-if="other && other.length" class="super-card__related">
 				<h5>També et pot interessar...</h5>
-				<scroller v-slot="{ item: related }" :items="item.related">
-					<card :item="related" @click.native.stop="select(related)">
+				<scroller v-slot="{ item: related }" :items="other">
+					<card
+						:item="related"
+						:class="related.type"
+						@click.native.stop="select(related)">
 						<h4>{{ related.name }}</h4>
 					</card>
 				</scroller>
@@ -66,6 +69,15 @@ export default {
 			expanded: false,
 			active: undefined,
 		};
+	},
+	computed: {
+		other() {
+			return [
+				...this.item.related.map(item => ({ ...item, type: 'related' })),
+				...this.item.predators.map(item => ({ ...item, type: 'predator' })),
+				...this.item.preys.map(item => ({ ...item, type: 'prey' })),
+			];
+		},
 	},
 	methods: {
 		select(item) {

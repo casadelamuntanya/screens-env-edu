@@ -9,6 +9,8 @@ airtable:
       - _parent
       - _children
       - _related
+      - _predator
+      - _prey
       - media
   tour:
     view: Tour

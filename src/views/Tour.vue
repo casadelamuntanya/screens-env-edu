@@ -78,13 +78,21 @@ export default {
 			const records = await airtable('tour').select(config.airtable.tour).all();
 			const waypoints = records.map(record => record.fields);
 			const relatedRecords = await this.fetchLinked(waypoints, ['related']);
-			const otherRecords = await this.fetchLinked(Object.values(relatedRecords), ['_children', '_related']);
+			const otherRecords = await this.fetchLinked(Object.values(relatedRecords), ['_children', '_related', '_predator', '_prey']);
 			this.waypoints = waypoints.map(waypoint => {
 				const items = waypoint.related.map(field => {
-					const { _children = [], _related = [], ...rest } = relatedRecords[field];
+					const {
+						_children = [],
+						_related = [],
+						_predator = [],
+						_prey = [],
+						...rest
+					} = relatedRecords[field];
 					const children = _children.map(id => otherRecords[id]);
 					const related = _related.map(id => otherRecords[id]);
-					return { ...rest, children, related };
+					const predators = _predator.map(id => otherRecords[id]);
+					const preys = _prey.map(id => otherRecords[id]);
+					return { ...rest, children, related, predators, preys };
 				});
 				return { ...waypoint, items };
 			});

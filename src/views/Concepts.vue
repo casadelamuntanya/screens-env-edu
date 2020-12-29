@@ -42,11 +42,20 @@ export default {
 		},
 		selected() {
 			if (!this.history.length) return undefined;
-			const [{ _parent, _children = [], _related = [], ...rest }] = this.history.slice(-1);
+			const [{
+				_parent,
+				_children = [],
+				_related = [],
+				_predator = [],
+				_prey = [],
+				...rest
+			}] = this.history.slice(-1);
 			const children = _children.map(item => this.concepts[item]);
 			const related = _related.map(item => this.concepts[item]);
+			const predators = _predator.map(item => this.concepts[item]);
+			const preys = _prey.map(item => this.concepts[item]);
 			const path = this.getPath(_parent);
-			return { ...rest, path, children, related };
+			return { ...rest, path, children, related, predators, preys };
 		},
 	},
 	async beforeMount() {
