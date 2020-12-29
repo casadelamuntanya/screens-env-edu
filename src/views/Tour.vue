@@ -76,28 +76,38 @@ export default {
 	methods: {
 		async fetchWaypoints() {
 			const records = await airtable('tour').select(config.airtable.tour).all();
-			const linked = await this.fetchLinked(records, 'related');
-			this.waypoints = records.map(({ fields }) => {
-				const related = fields.related.map(field => linked[field]);
-				return { ...fields, related };
+			const waypoints = records.map(record => record.fields);
+			const relatedRecords = await this.fetchLinked(waypoints, ['related']);
+			const otherRecords = await this.fetchLinked(Object.values(relatedRecords), ['_children', '_related']);
+			this.waypoints = waypoints.map(waypoint => {
+				const items = waypoint.related.map(field => {
+					const { _children = [], _related = [], ...rest } = relatedRecords[field];
+					const children = _children.map(id => otherRecords[id]);
+					const related = _related.map(id => otherRecords[id]);
+					return { ...rest, children, related };
+				});
+				return { ...waypoint, items };
 			});
 			this.step = 0;
 		},
-		async fetchLinked(records, field) {
+		async fetchLinked(records, linkedFields) {
 			const filterByFormula = `OR(${
 				records
-					.reduce((acc, record) => [...new Set([...acc, ...record.fields[field]])], [])
+					.reduce((acc, record) => {
+						const fields = linkedFields.map(field => record[field]).flat();
+						return [...new Set([...acc, ...fields])];
+					}, [])
 					.map(id => `RECORD_ID()='${id}'`)
 					.join(',')
 			})`;
-			const linked = {};
+			const linkedRecords = {};
 			await airtable('concepts')
 				.select({ ...config.airtable.concepts, filterByFormula })
 				.eachPage((results, nextPage) => {
-					results.forEach(({ id, fields }) => { linked[id] = fields; });
+					results.forEach(({ id, fields }) => { linkedRecords[id] = fields; });
 					nextPage();
 				});
-			return linked;
+			return linkedRecords;
 		},
 		activate(item) {
 			this.active = item;
