@@ -16,6 +16,7 @@
 				</card>
 			</scroller>
 		</div>
+		<router-link v-if="!selected" to="/" class="close-btn">&times;</router-link>
 		<super-card
 			v-if="active"
 			:item="active"
