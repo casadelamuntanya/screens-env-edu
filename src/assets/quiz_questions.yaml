@@ -466,7 +466,7 @@
     - Carreteres
     - Roques i tarteres
     - Neu
-    - vent
+    - Vent
   level: easy
   topic: medi_fisic_antropic
 
@@ -918,6 +918,155 @@
 
 
 # MEDI FÍSIC I ANTRÒPIC 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quina és la diferència entre els factors biòtics i factors abiòtics?
+  valid: Un factor abiòtic no és viu i els factors biòtics són éssers vius
+  hint: Un es refereix a la llum, l'aire, la humitat, etc. i l'altre a les plantes i als animals
+  invalid:
+    - Un factor biòtic és una muntanya i un factor abiòtic és un pi negre
+    - Un factor biòtic són els núvols i un factor abiòtic els ocells
+    - Un factor biòtic és una glacera i un factor abiòtic és una flor
+    - Un factor biòtic és un refugi i un factor abiòtic és un invertebrat
+    - Un factor biòtic són factors climàtics i un factor abiòtic és una cadena tròfica
+    - Un factor biòtic és una serralada i un factor abiòtic són els depredadors
+    - Un factor biòtic són els assentaments i un factor abiòtic són les vaques
+    - Un factor biòtic són els pobles i un factor abiòtic són els microorganismes
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin lloc està declarat com a Reserva de la Biosfera a Andorra?
+  valid: Ordino
+  hint: És un territori amb l'objectiu de conservar la diversitat cultural i el desenvolupament econòmic i social sostenible a través de la relació entre les persones i la natura
+  invalid:
+    - Andorra la Vella
+    - La Massana
+    - Canillo
+    - Encamp
+    - Pas de la Casa
+    - Escaldes-Engordany
+    - Sant Julià de Lòria
+    - No n'hi ha cap
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin sector econòmic productiu depèn més del clima a les nostres muntanyes?
+  valid: Agrícola
+  hint: La producció de vegetals depèn molt de les condicions meteorològiques
+  invalid:
+    - Indústria
+    - Asserradores
+    - Esquí
+    - Financer
+    - Comerç
+    - Mines
+    - Esport
+    - Turisme
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Què hem de fer per limitar els impactes a la flora, la fauna i al paisatge, així com respectar el maneig del bestiar?
+  valid: Seguir els camins marcats i respectar les tanques del bestiar
+  hint: Forma part del nostre comportament cívic
+  invalid:
+    - Riure molt
+    - Anar amb un calçat adequat
+    - Deixar el pas a les bicicletes
+    - No fer soroll
+    - Anar un darrere l'altre
+    - No banyant-se als rius
+    - No podem menjar
+    - Arrencar les flors del camí
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Què són els éssers vius?
+  valid: Factors biòtics
+  hint: Són components i organismes vius
+  invalid:
+    - Factors abiòtics
+    - Plaques tectòniques
+    - Un estatge de vegetació
+    - Pedra tosca
+    - Factors climàtics
+    - Un hàbitat
+    - Les roques
+    - Estacions de l'any
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin factor ecològic és important per la vegetació?
+  valid: El vent
+  hint: És un factor abiòtic que afecta la forma de creixement de les plantes i amplifica l'evapotranspiració
+  invalid:
+    - Neret
+    - Pi negre
+    - Avet
+    - Falguera
+    - Avellaner
+    - Molsa
+    - Ramaderia
+    - Dròsera
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quina és la zona on toca més el sol i provoca major escalfament?
+  valid: Solana
+  hint: Zona de les landes on trobem espècies com l'escobar o el ginebró
+  invalid:
+    - obaga
+    - Ombra
+    - Humitat
+    - Sequera
+    - Temperatura
+    - Glacera
+    - Neu
+    - Abarsetar
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quina és la zona amb menys sol?
+  valid: Obaga
+  hint: L'abarset s'hi conserva millor sota la neu durant l'hivern
+  invalid:
+    - Solana
+    - Xafogor
+    - Frescor
+    - Humitat
+    - Temperatura
+    - Glacera
+    - Arcalís
+    - Prats
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Perquè no s'han de collir plantes salvatges ni destorbar els animals?
+  valid: Per no pertorbar l'equilibri dels ecosistemes
+  hint: Preservar la natura ens farà sentir millors persones
+  invalid:
+    - Perquè són molt tòxiques
+    - Perquè els animals ens atacarien
+    - Perquè ens renyarà la mestra
+    - Perquè les flors es trenquen
+    - Perquè només les poden tocar els adults
+    - Perquè hauríem de pagar una multa
+    - Perquè no podríem tornar mai més
+    - Perquè fan pudor
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin grup de factors climàtics provoquen l'erosió de les muntanyes?
+  valid: Pendent, vent, pluja, desforestació, tempestes
+  hint: Constitueixen fenòmens que es produeixen en l'atmosfera
+  invalid:
+    - Terra, vent, foc, terratrèmols
+    - Lluna, volcans, núvols, pluja
+    - Terratrèmols, sol, vent, tempestes
+    - Inundacions, vent, neu, sol
+    - Foc, vent, neu, pluja
+    - Volcans, vent, fred, aigua
+    - Estrelles, lluna, volcans, tempestes
+    - Meteorits, sol, vent, neu
+  level: medium
+  topic: medi_fisic_antropic
 
 
 # FLORA I FAUNA 12 - 15 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
