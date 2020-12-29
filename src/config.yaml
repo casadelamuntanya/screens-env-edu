@@ -31,9 +31,9 @@ quiz:
     medium: 3
     hard: 4
   COUNTDOWN:            # Duration of question, countdown (in seconds)
-    easy: 40
-    medium: 20
-    hard: 10
+    easy: 60
+    medium: 40
+    hard: 20
   STEPDOWN: 0.5         # Countdown duration (in seconds)
   VALIDATION_TIME: 3    # Duration of a answer validation (in seconds)
   levels:
