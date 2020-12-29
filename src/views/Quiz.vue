@@ -112,7 +112,8 @@ export default {
 		question() {
 			if (!this.step) return undefined;
 			const { question, invalid, valid, hint } = this.questions[this.step.index];
-			const answers = shuffle([...shuffle(invalid).slice(0, config.ANSWER_COUNT - 1), valid]);
+			const count = config.ANSWER_COUNT[this.selectedLevel] - 1;
+			const answers = shuffle([...shuffle(invalid).slice(0, count), valid]);
 			return { question, answers, valid, hint };
 		},
 		hurryLevel() {

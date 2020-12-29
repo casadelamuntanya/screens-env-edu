@@ -26,7 +26,10 @@ airtable:
 quiz:
   HINT_SCORE: 0.5       # Punctuation for hinted answer
   QUESTION_COUNT: 10    # Number of questions
-  ANSWER_COUNT: 4       # Number of answers
+  ANSWER_COUNT:         # Number of answers
+    easy: 2
+    medium: 3
+    hard: 4
   COUNTDOWN:            # Duration of question, countdown (in seconds)
     easy: 40
     medium: 20
