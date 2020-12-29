@@ -50,8 +50,7 @@ export default {
 		waypoint() {
 			const { waypoints, step } = this;
 			if (!waypoints) return undefined;
-			const waypoint = waypoints[step];
-			return waypoint;
+			return waypoints[step];
 		},
 	},
 	watch: {

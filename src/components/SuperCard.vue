@@ -5,7 +5,7 @@
 		attribution
 		@click.native="toggleExpandedContent">
 		<header class="super-card__header">
-			<ul v-if="showPath" class="super-card__path">
+			<ul v-if="patheable" class="super-card__path">
 				<li><button @click.stop="select()">Conceptes</button></li>
 				<li v-for="step in item.path" :key="step.name">
 					<button @click.stop="select(step)">{{ step.name }}</button>
@@ -58,7 +58,7 @@ export default {
 	components: { Card, Scroller },
 	props: {
 		item: { type: Object, required: true },
-		showPath: { type: Boolean, default: false },
+		patheable: { type: Boolean, default: false },
 		closeable: { type: Boolean, default: false },
 	},
 	data() {
