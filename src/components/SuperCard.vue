@@ -41,6 +41,11 @@
 				</scroller>
 			</div>
 		</footer>
+		<a
+			v-if="closeable"
+			href="#"
+			class="close-btn"
+			@click.prevent="close">&times;</a>
 	</card>
 </template>
 
@@ -54,6 +59,7 @@ export default {
 	props: {
 		item: { type: Object, required: true },
 		showPath: { type: Boolean, default: false },
+		closeable: { type: Boolean, default: false },
 	},
 	data() {
 		return {
@@ -70,6 +76,9 @@ export default {
 		},
 		toggleExpandedContent() {
 			this.expanded = !this.expanded;
+		},
+		close() {
+			this.$emit('close');
 		},
 	},
 };
