@@ -5,13 +5,13 @@
 	justify-content: center;
 	background: #f8f8f8;
 	font-size: 2rem;
+	color: #333;
 
 	h1 {
 		text-align: center;
 		margin-bottom: 0.75em;
 		font: 15rem 'Barlow Condensed', sans-serif;
-		font-weight: 900;
-		// letter-spacing: 0.5rem;
+		font-weight: 300;
 	}
 
 	.replay,
@@ -21,7 +21,7 @@
 	}
 
 	button {
-		background: #000;
+		background: #333;
 		color: #fff;
 		display: inline-block;
 		padding: 2.5rem 5rem;
@@ -29,15 +29,15 @@
 		font-weight: 600;
 		font-size: 2.5rem;
 
-		&:disabled { opacity: 0.1; }
+		&:disabled { opacity: 0; }
 	}
 
 	.selector {
-		padding: 2rem 2rem 2rem;
+		padding: 1rem 4rem;
 		margin: 5rem 0;
 
 		legend {
-			font: 2.5rem 'Barlow Condensed', sans-serif;
+			font: 4rem 'Barlow Condensed', sans-serif;
 		}
 
 		label {
@@ -47,27 +47,40 @@
 			span {
 				display: inline-block;
 				box-sizing: border-box;
-				background: #fff;
 				height: 15rem;
-				width: 13rem;
+				width: 12rem;
 				margin: 1rem;
 				border-radius: 1rem;
-				background-size: cover;
-				background-position: center center;
-				opacity: 0.7;
+				background-repeat: no-repeat;
+				background-position: right -3rem bottom -1.5rem;
+				background-size: contain;
+				opacity: 0.6;
 				padding: 1.5rem;
-				font-size: 2.5rem;
-				filter: grayscale(0.5);
+				font: 2.75rem 'Barlow Condensed', sans-serif;
+				line-height: 1;
+				filter: grayscale(0.8);
 				transition: all 0.3s ease;
+				color: #333;
+
+				strong {
+					font-size: 1.75em;
+				}
 			}
 
 			input:checked + span {
 				opacity: 1;
-				box-shadow: 0 0.5rem 1.5rem 0 rgba(#000, 0.1);
+				background-color: #333;
+				color: #fff;
+				box-shadow: 0 0.5rem 1.5rem 0 rgba(#333, 0.3);
 				transform: scale(1.1);
 				filter: none;
 			}
 		}
+
+		&__boscos { background: url('../assets/img/boscos.png'); }
+		&__flora_fauna { background: url('../assets/img/flora_fauna.png'); }
+		&__ecosistemes { background: url('../assets/img/ecosistemes.png'); }
+		&__medi_fisic_antropic { background: url('../assets/img/medi_fisic_antropic.png'); }
 	}
 
 	.question {
@@ -87,8 +100,9 @@
 			input { display: none; }
 
 			span {
-				border: 2px solid #eee;
+				border: 3px solid #e0e0e0;
 				background: #fff;
+				font-weight: bold;
 				display: block;
 				padding: 2.5rem;
 				margin: 2rem 0;
@@ -106,7 +120,7 @@
 				}
 
 				&.is-valid span {
-					color: #000;
+					color: #333;
 					background: #9d9;
 				}
 
@@ -122,7 +136,7 @@
 			text-align: center;
 
 			span {
-				background: rgba(#000, 0.05);
+				background: rgba(#333, 0.1);
 				padding: 2rem 3rem;
 				margin: 5rem 0;
 				font-size: 1.5rem;
@@ -133,8 +147,8 @@
 				text-align: left;
 
 				img {
-					opacity: 0.1;
 					height: 3rem;
+					opacity: 0.4;
 					margin: 0 1rem 0 -0.5rem;
 				}
 			}
@@ -143,24 +157,20 @@
 		progress {
 			margin: 5rem 0;
 			appearance: none;
-			height: 8px;
+			height: 15px;
 			display: block;
 			border-radius: 1rem;
 			overflow: hidden;
 			width: 100%;
 			box-sizing: border-box;
-			background: rgba(#000, 0.025);
+			background: rgba(#333, 0.05);
+			border: 1px solid #333;
 			border: 0;
 
 			&::-webkit-progress-value,
 			&::-moz-progress-bar {
-				background: #7ABD7E;
-				transition: background 2s linear;
-			}
-
-			&.hurry-3::-webkit-progress-value,
-			&.hurry-3::-moz-progress-bar {
-				background: #8CD47E;
+				background: #9d9;
+				transition: background 1s linear;
 			}
 
 			&.hurry-2::-webkit-progress-value,
@@ -208,8 +218,8 @@
 				margin: 0.5rem;
 			}
 
-			.level { background: rgba(#F8D66D, 0.3)}
-			.topic { background: rgba(#7d7, 0.3); }
+			.level { background: rgba(#F8D66D, 0.5)}
+			.topic { background: rgba(#7d7, 0.5); }
 		}
 	}
 }

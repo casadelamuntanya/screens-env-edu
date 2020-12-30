@@ -10,7 +10,10 @@
 				<template #time>{{ elapsed }}</template>
 			</i18n>
 			<p class="tags">
-				<span class="level">{{ $t(`quiz.levels.${selectedLevel}`) }}</span>
+				<span class="level">
+					{{ $t(`quiz.levels.${selectedLevel}`) }}
+					{{ $t('quiz.levels.years') }}
+				</span>
 				<span v-for="topic in selectedTopic" :key="topic" class="topic">
 					{{ $t(`quiz.topics.${topic}`) }}
 				</span>
@@ -53,7 +56,8 @@
 				<label v-for="level in levels" :key="level">
 					<input v-model="selectedLevel" :value="level" type="radio">
 					<span :class="`selector__${level}`">
-						{{ $t(`quiz.levels.${level}`) }}
+						<strong>{{ $t(`quiz.levels.${level}`) }}</strong>
+						{{ $t('quiz.levels.years') }}
 					</span>
 				</label>
 			</fieldset>

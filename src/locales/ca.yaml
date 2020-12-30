@@ -5,21 +5,22 @@ credits: Creat amb {love} per Casa de la Muntanya
 views:
   tour: Visita guiada
   concepts: Conceptes
-  quiz: Qüestionari
+  quiz: Trivia
 
 card:
   path_index: Inici
   related: També et pot interessar...
 
 quiz:
-  title: Quiz
-  select_level: Selecciona el nivell
-  level: Nivell
+  title: Trivia
+  select_level: Selecciona la edat
+  level: Edat
   levels:
-    easy: Fàcil
-    medium: Intermig
-    hard: Difícil
-  select_topic: Escull els temes
+    easy: 6-8
+    medium: 9-11
+    hard: 12-15
+    years: anys
+  select_topic: Selecciona els temes
   topic: Temes
   topics:
     flora_fauna: Flora i fauna
