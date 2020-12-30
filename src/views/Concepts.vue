@@ -8,7 +8,7 @@
 			@select="select" />
 		<ul v-else class="concepts__root">
 			<li v-for="concept in root" :key="concept.name">
-				<card :item="concept" @click.native.stop="select(concept)">
+				<card :item="concept" size="full" @click.native.stop="select(concept)">
 					<h1>{{ concept.name }}</h1>
 				</card>
 			</li>

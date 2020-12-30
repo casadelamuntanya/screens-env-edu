@@ -8,7 +8,7 @@
 				loop
 				draggable="false" />
 			<figcaption v-if="attribution">
-				{{ image.filename }}
+				{{ file.filename }}
 			</figcaption>
 		</figure>
 		<slot />
@@ -20,14 +20,15 @@ export default {
 	name: 'Card',
 	props: {
 		item: { type: Object, required: true },
+		size: { type: String, default: 'large' },
 		attribution: { type: Boolean, default: false },
 	},
 	computed: {
-		image() { return this.item.bg ? this.item.bg[0] : this.item; },
-		mimeType() { return this.image.type.match(/video\//g) ? 'video' : 'img'; },
+		file() { return this.item.bg ? this.item.bg[0] : this.item; },
+		mimeType() { return this.file.type.match(/video\//g) ? 'video' : 'img'; },
 		thumbnail() {
-			const { thumbnails } = this.image;
-			return thumbnails ? thumbnails.large.url : this.image.url;
+			const { thumbnails } = this.file;
+			return thumbnails ? thumbnails[this.size]?.url || this.file.url : this.file.url;
 		},
 	},
 };

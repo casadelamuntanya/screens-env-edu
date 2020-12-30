@@ -2,6 +2,7 @@
 	<card
 		:item="item"
 		:class="['super-card', { 'expanded': expanded }]"
+		size="full"
 		attribution
 		@click.native="toggleExpandedContent">
 		<header class="super-card__header">
