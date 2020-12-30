@@ -7,6 +7,10 @@ views:
   concepts: Conceptes
   quiz: Qüestionari
 
+card:
+  path_index: Inici
+  related: També et pot interessar...
+
 quiz:
   title: Quiz
   select_level: Selecciona el nivell

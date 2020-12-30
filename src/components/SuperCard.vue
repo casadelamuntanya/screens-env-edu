@@ -7,7 +7,7 @@
 		@click.native="toggleExpandedContent">
 		<header class="super-card__header">
 			<ul v-if="patheable" class="super-card__path">
-				<li><button @click.stop="select()">Conceptes</button></li>
+				<li><button @click.stop="select()">{{ $t('card.path_index') }}</button></li>
 				<li v-for="step in item.path" :key="step.name">
 					<button @click.stop="select(step)">{{ step.name }}</button>
 				</li>
@@ -34,7 +34,7 @@
 				</scroller>
 			</div>
 			<div v-if="other && other.length" class="super-card__related">
-				<h5>També et pot interessar...</h5>
+				<h5>{{ $t('card.related') }}</h5>
 				<scroller v-slot="{ item: related }" :items="other">
 					<card
 						:item="related"
