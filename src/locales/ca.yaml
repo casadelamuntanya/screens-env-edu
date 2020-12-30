@@ -1,4 +1,6 @@
 env_edu: Educació Ambiental
+env_edu_sub: ' '
+credits: Creat amb {love} per Casa de la Muntanya
 
 views:
   tour: Visita guiada
