@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "serve": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "postbuild": "cp -r ./static/* ./dist"
   },
   "keywords": [],
   "author": "Marc Vilella <mvilella@obsa.ad> (https://github.com/markusand)",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "@vue/component-compiler-utils": "^3.2.0",
     "eslint": "^7.12.1",
     "eslint-config-airbnb-base": "^14.2.0",
@@ -23,9 +25,14 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "airtable": "^0.10.1",
+    "mapbox-gl": "^2.0.0",
     "reset-css": "^5.0.1",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-i18n": "^8.22.2"
+    "vue-i18n": "^8.22.2",
+    "vue-router": "^3.4.9"
   }
 }

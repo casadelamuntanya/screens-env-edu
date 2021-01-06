@@ -1,0 +1,97 @@
+@import
+	'typography',
+	'components/card',
+	'components/super-card',
+	'views/navigation',
+	'views/concepts',
+	'views/quiz',
+	'views/tour';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	user-select: none;
+	color: #333;
+}
+
+#app {
+	height: 100%;
+}
+
+button {
+	appearance: none;
+	border: none;
+	background: none;
+	font: inherit;
+	color: inherit;
+	position: relative;
+}
+
+.close-btn {
+	display: block;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 0.25em 0.5em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1rem;
+	text-decoration: none;
+	color: inherit;
+	z-index: 1;
+}
+
+figure {
+	position: relative;
+	outline: 0;
+}
+
+.cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 0;
+	background: #000;
+	pointer-events: none;
+
+	video,
+	img { @extend .cover; }
+
+	& + * {
+		position: relative;
+		z-index: 1;
+	}
+
+	figcaption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgba(#000, 0.5);
+		font-size: 0.7em;
+		padding: 0.75em 1em;
+	}
+}
+
+.expandable {
+	display: none;
+
+	.expanded & { display: block; }
+}
+
+.active {
+	position: relative;
+	z-index: 3;
+
+	& + .fade {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 2;
+		background: rgba(#000, 0.9);
+	}
+}

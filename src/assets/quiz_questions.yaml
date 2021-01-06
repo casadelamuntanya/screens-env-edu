@@ -1,0 +1,1532 @@
+# FLORA I FAUNA 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quin d'aquests animals té banyes en forma de ganxo?
+  valid: Isard
+  hint: Es desplaça amb molta agilitat en terrenys verticals rocosos i en tarteres. Comptant les anelles de les banyes podem conèixer l'edat de l'animal.
+  invalid:
+    - Guineu
+    - Mufló
+    - Cérvol
+    - Àguila
+    - Pi negre
+    - Orquídia
+    - Marmota
+    - Cotonera
+  level: easy
+  topic: flora_fauna
+
+- question: Quin d'aquests animals menja ossos?
+  valid: Trencalòs
+  hint: Trenca els ossos dels animals morts deixant-los caure sobre unes pedres per menjar-ne la medul·la. També es pot empassar ossos petits sencers.
+  invalid:
+    - Àguila
+    - Pardal
+    - Periquito
+    - cavall
+    - Vaca
+    - Ermini
+    - Serp
+    - Mussol
+  level: easy
+  topic: flora_fauna
+
+- question: Quin d'aquests animals canvia de color segons l'estació?
+  valid: Ermini
+  hint: Viu en tarteres on es desplaça amb molta agilitat gràcies a un esquelet molt flexible. El canvi de color és una estratègia de camuflatge - a l'hivern (blanc) es confon amb la neu i a l'estiu (marronós) amb les pedres.
+  invalid:
+    - Isard
+    - Grandalla
+    - Cabirol
+    - Vidriol
+    - Truita
+    - Gall fer
+    - Picot negre
+    - Tramuntana
+  level: easy
+  topic: flora_fauna
+
+- question: Quin d'aquests animals és un mamífer?
+  valid: Marmota
+  hint: Els pares es cuiden molt de les seves cries que protegeixen dels depredadors. Quan xiulen s'amaguen de cop en un cau on hibernen amb tota la família.
+  invalid:
+    - Vidriol
+    - Serp
+    - Cuereta torrentera
+    - Aigüerola
+    - Voltor
+    - Mussol banyut
+    - Aranya
+    - Escarabat
+  level: easy
+  topic: flora_fauna
+
+- question: Quin grup d'animals són de sang freda?
+  valid: Rèptils
+  hint: Tenen escates, rapten i s'arrosseguen. Mengen generalment insectes, els més grans poden menjar petits rosegadors.
+  invalid:
+    - Mamífers
+    - Ocells
+    - Cetacis
+    - Arbres
+    - Flors
+    - Tomàquets
+    - Pedres
+    - Humans
+  level: easy
+  topic: flora_fauna
+
+- question: Que menja el cabirol?
+  valid: Herba
+  hint: Tot i que el cabirol és un animal forestal ha de desplaçar-se als prats montans i subalpins per alimentar-se.
+  invalid:
+    - Plàtans
+    - Caragols
+    - Dròseres
+    - Aranyes
+    - Pinyes
+    - Granotes
+    - Carn
+    - Tritons
+  level: easy
+  topic: flora_fauna
+
+- question: Quina és la flor que representa Andorra?
+  valid: Grandalla
+  hint: Els seus sis pètals representen les sis parròquies que en el seu temps hi havia a Andorra.
+  invalid:
+    - Lliri
+    - Rosella
+    - Pingüícula
+    - Liquen
+    - Gençana
+    - Abarset
+    - Moixera
+    - Clavell de pastor
+  level: easy
+  topic: flora_fauna
+
+- question: Quina flor té forma de coixinet?
+  valid: Androsace imbricada
+  hint: És la planta característica de les roques àcides entre els 1500-3000 metres. La seva forma en coixinet li permet resistir al fred i al vent.
+  invalid:
+    - Gerani
+    - Lotus
+    - Cep
+    - Campànula
+    - Crepis
+    - Calta
+    - Gençana
+    - Llangardaix
+  level: easy
+  topic: flora_fauna
+
+- question: Quina és la planta preferida que menja l'Isard?
+  valid: Regalèssia de muntanya
+  hint: La trobem als prats alpins i subalpins. És de la família dels trèvols. Les seves arrels tenen un gust particular característic.
+  invalid:
+    - Bossa de pastor
+    - Nigretella
+    - Falguera
+    - Grandalla
+    - Arnica
+    - Paradisea
+    - Festuca
+    - Nabiu
+  level: easy
+  topic: flora_fauna
+
+- question: Quina d'aquestes flors "menja" insectes?
+  valid: Dròsera o "herba de la gota"
+  hint: Quan l'insecte toca els filaments de la fulla, aquesta es va tancant a poc a poc. La planta digereix la part interna de l'insecte i només deixa la quitina, substància massa dura, que és l'"esquelet" extern de l'insecte.
+  invalid:
+    - Violeta
+    - Perdiu
+    - Rosa
+    - Bàlec
+    - Gençana
+    - Gerd
+    - Matafoc
+    - Mosquit
+  level: easy
+  topic: flora_fauna
+
+
+# BOSCOS 6 - 8 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quina d'aquestes fases no forma part del cicle natural del bosc de pi negre?
+  valid: Acceleració de l'arbre
+  hint: El bosc de pi negre segueix una evolució natural segons la seva edat, pot ampliar la seva zona, però els arbres no es desplacen.
+  invalid:
+    - Regeneració
+    - Regeneració densa i alta
+    - Perxada baixa
+    - Perxada alta
+    - Bosc jove
+    - Bosc madur
+    - Bosc envellit
+    - Bosc caigut
+  level: easy
+  topic: boscos
+
+- question: On trobem el bosc de roure de fulla gran?
+  valid: Zona forestal
+  hint: A Andorra és un tipus de bosc bastant escàs. En trobem a Llorts.
+  invalid:
+    - Zona humida
+    - Zona de landes
+    - Zona de tarteres
+    - Zona del mar
+    - Zona de prats
+    - Zona de nucli familiar
+    - Zona estació d'esquí
+    - Zona dels pics
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests animals fa forats grans i ovalats, en particular a pins, avets i trèmols?
+  valid: Picot negre
+  hint: És el més gran de la seva espècie i té un casquet vermell. El seu forat, quan no hi torna, l'ocupa a vegades el mussol pirinenc o altres ocells.
+  invalid:
+    - Marta
+    - Mussol pirinenc
+    - Xoriguer
+    - Mussol banyut
+    - Aligot
+    - Trencapinyes
+    - Pardal
+    - Perdiu xerra
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests animals té dues banyes de plomes erèctils?
+  valid: Mussol banyut
+  hint: És un ocell rapinyaire nocturn
+  invalid:
+     - Mussol pirinenc
+     - Picot verd
+     - Ratapenada
+     - Cuereta torrentera
+     - Aigüerola
+     - Salamandra
+     - Gall de bosc
+     - Marta
+  level: easy
+  topic: boscos
+
+- question: Quins d'aquests no és un arbre caducifoli?
+  valid: Pi negre
+  hint: Els arbres caducifolis perden generalment les fulles a l'hivern. Segons l'espècie es poden quedar seques a les branques (ex.roure martinenc)
+  invalid:
+    - Om
+    - Cirerer
+    - Roure de fulla gran
+    - Trèmol
+    - Beç
+    - Moixera de guilla
+    - Salze
+    - Gatzerí
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests arbres o arbusts no és de fulla perenne?
+  valid: Moixera de guilla
+  hint: Els arbres i arbusts de fulla perenne guarden les fulles o les agulles a l'hivern
+  invalid:
+    - Pi negre
+    - Avet
+    - Pi roig
+    - Ginebró
+    - Abarset
+    - Boix
+    - Boix grèvol
+    - Pinassa
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests arbres o arbusts no es troba a l'estatge subalpí?
+  valid: Roure
+  hint: Arbust amb fruit vermell rodó que aguanta a l'arbre l'hivern. Les guineus i els ocells se n'aprofiten
+  invalid:
+    - Pi negre
+    - Abarset
+    - Beç
+    - Moixera de guilla
+    - Gatsalze
+    - Salze pirinenc
+    - Ginebró
+    - Avet
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests arbres pot viure més de 700 anys?
+  valid: Pi negre
+  hint: És l'arbre típic dels boscos subalpins pirinencs
+  invalid:
+    - Moixera de guilla
+    - Roure martinenc
+    - Cirerer
+    - Beç
+    - Pollancre
+    - Avet
+    - Avellaner
+    - Om
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests animals viu al bosc?
+  valid: Marta
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua molt gran
+  invalid:
+    - Ermini
+    - Almesquera
+    - Perdiu blanca
+    - Escurçó
+    - Vidriol
+    - Trencalòs
+    - Sargantana pallaresa
+    - Àguila daurada
+  level: easy
+  topic: boscos
+
+- question: Quin d'aquests éssers vius no es troba al bosc?
+  valid: Perdiu blanca
+  hint: Viu als prats alpins
+  invalid:
+    - Liquen
+    - Cabirol
+    - Picot garser gros
+    - Mallerenga petita
+    - Porc senglar
+    - Esquirol
+    - Marta
+    - Bolet
+  level: easy
+  topic: boscos
+
+
+# ECOSISTEMES 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què mengen els animals predadors en una cadena alimentària?
+  valid: Carn
+  hint: Una cadena alimentària (tròfica) està formada uns éssers vius que depenen els uns dels altres per alimentar-se (plantes, herbívors, carnívors, detritívors)
+  invalid:
+    - Herba
+    - Insectes
+    - Fulles
+    - Patates
+    - Tomàquets
+    - Mel
+    - Vi
+    - Branques
+  level: easy
+  topic: ecosistemes
+
+- question: Com es diuen els animals que mengen herba?
+  valid: Herbívors
+  hint: Estan al segon nivell de la cadena alimentària
+  invalid:
+    - Carnívors
+    - Pastissers
+    - Mamífers
+    - Peixos
+    - Amfibis
+    - Rèptils
+    - Insectes
+    - Ossos
+  level: easy
+  topic: ecosistemes
+
+- question: En quins ecosistemes es troba l'isard, sovint a l'estiu, a Andorra?
+  valid: Prats, roques i tarteres
+  hint: Són hàbitats de l'estatge alpí
+  invalid:
+    - Zones humides i llacs
+    - Coves
+    - Mar
+    - Pobles
+    - Bosc montà i prats
+    - Àrtic
+    - Camps de tabac
+    - Desert
+  level: easy
+  topic: ecosistemes
+
+- question: Quins són els principals predadors de la marmota?
+  valid: Àguila daurada i guineu
+  hint: El predador d'un animal és el que el caça i el menja per sobreviure (se situa a dalt de la cadena alimentària o tròfica)
+  invalid:
+    - Isard i mufló
+    - Escurçó i vidriol
+    - Truita i granota roja
+    - Talp i taupa
+    - Marta i gat salvatge
+    - Vaca i cavall
+    - Gralla de bec vermell i xoriguer
+    - Porc senglar i ermini
+  level: easy
+  topic: ecosistemes
+
+- question: Quin d'aquests elements no és un ecosistema o un microecosistema?
+  valid: Vertebrats
+  hint: Els ecosistemes estan formats per un medi físic i uns éssers vius que es relacionen entre ells, compartint el mateix hàbitat
+  invalid:
+    - Avetar
+    - Arbre mort caigut
+    - Bosc de pi negre
+    - Prat
+    - Mar
+    - Estany
+    - Riu
+    - Landes
+  level: easy
+  topic: ecosistemes
+
+- question: A quin hàbitat de muntanya trobem la saxífraga media?
+  valid: Roques calcàries
+  hint: Es una planta característica d'aquest hàbitat. Té forma de coixinet per aguantar condicions climatològiques extremes
+  invalid:
+    - Xones humides
+    - Vora dels rius
+    - Bosc subalpí
+    - Prats de dall
+    - Tarteres
+    - Landes
+    - Estany
+    - Cova
+  level: easy
+  topic: ecosistemes
+
+- question: Quins són els productors dins de les cadenes tròfiques (alimentàries)?
+  valid: Plantes, fitoplàncton
+  hint: Són aquells éssers vius que són capaços d'elaborar la matèria orgànica
+  invalid:
+    - Vaca, pollastre
+    - Ous, formatge
+    - Llet, infusions
+    - Peix, marisc
+    - Mel, sucs
+    - Aigua, vi
+    - Fruita, bledes
+    - Pomes, peres
+  level: easy
+  topic: ecosistemes
+
+- question: Quin d'aquests animals viu a les zones humides?
+  valid: Tritó pirinenc
+  hint: Viu en aigües netes
+  invalid:
+    - Marta
+    - Gat salvatge
+    - Perdiu blanca
+    - Llangardaix
+    - Esquirol
+    - Vidriol
+    - Isard
+    - Escurçó
+  level: easy
+  topic: ecosistemes
+
+- question: A què es pot comparar el conjunt de les relacions entre éssers vius d'un ecosistema?
+  valid: Xarxa
+  hint: Està generada pel conjunt de relacions entre éssers vius.
+  invalid:
+    - Equip
+    - Predadors
+    - Herbívors
+    - Colònies
+    - Varb
+    - Hàbitat
+    - Sòl
+    - Antròpic
+  level: easy
+  topic: ecosistemes
+
+- question: Quin recorregut fa cada element de la matèria en un ecosistema?
+  valid: Cicle
+  hint: En un ecosistema, els elements de matèria es reciclen
+  invalid:
+    - Cor
+    - Desapareix
+    - En línia
+    - Ziga-zaga
+    - Vola
+    - Filtra
+    - S'evapora
+    - Es congela
+  level: easy
+  topic: ecosistemes
+
+
+# MEDI FÍSIC I ANTRÒPIC 6 - 8 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què són els factors biòtics?
+  valid: Components i organismes vius
+  hint: Són el contrari que els factors abiòtics (factors físics o químics, que no és viu).
+  invalid:
+    - Temperatura
+    - Hàbitats
+    - Allaus
+    - Humitat
+    - Carreteres
+    - Roques i tarteres
+    - Neu
+    - Vent
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quin d'aquests elements no és abiòtic?
+  valid: Cuc
+  hint: És un element viu
+  invalid:
+    - Clima
+    - Temperatura
+    - Vent
+    - Calor
+    - Humitat
+    - Fred
+    - Pluja
+    - Aire
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Un factor ecològic important per la vegetació
+  valid: Humitat
+  hint: Factor ecològic, abiòtic, que afecta el creixement de les plantes o la vida dels amfibis
+  invalid:
+    - Bosc
+    - Pi negre
+    - Mollera
+    - Roure
+    - Marta
+    - Ós
+    - Carnívor
+    - Depredador
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: A quina zona trobem cada dia el major escalfament?
+  valid: Solana
+  hint: Zona on creixen les landes d'escobar i ginebró
+  invalid:
+    - Obaga
+    - Ombra
+    - Humitat
+    - Sequera
+    - Temperatura
+    - Glacera
+    - Neu
+    - Abarsetar
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: On trobem l'abarsetar?
+  valid: Obaga
+  hint: S'hi conserva millor a l'hivern sota la neu, ja que és una zona amb menys Sol
+  invalid:
+    - Solana
+    - Xafogor
+    - Frescor
+    - Humitat
+    - Temperatura
+    - Glacera
+    - Arcalís
+    - Prats
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quina proposta afavoreix la conservació dels ecosistemes?
+  valid: Parc natural
+  hint: Lloc on l'objectiu principal és la conservació i la protecció del patrimoni natural
+  invalid:
+    - Pistes d'esquí
+    - Deixalles
+    - Trepitjament
+    - Turisme massiu
+    - Assecat d'una mollera
+    - Contaminació de l'aire
+    - Consumisme
+    - Autopista
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Quin sector econòmic productiu depèn més del clima a les nostres muntanyes?
+  valid: Agrícola
+  hint: La producció de vegetals depèn molt de les condicions meteorològiques
+  invalid:
+    - Indústria
+    - Asserradores
+    - Esquí
+    - Financer
+    - Comerç
+    - Mines
+    - Esport
+    - Turisme
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: De cara al medi ambient i als ramaders, perquè hem de seguir els camins marcats i respectar les tanques?
+  valid: Per limitar els impactes a la flora, la fauna, el paisatge, i respectar el maneig del bestiar.
+  hint: Forma part del nostre comportament cívic
+  invalid:
+    - Per ser més feliços
+    - Per no relliscar i caure
+    - Per deixar el pas a les bicicletes
+    - Per fer menys soroll en caminar
+    - Per no perdre'ns
+    - Per arribar més ràpid
+    - Per saltar els rius
+    - Per pujar als arbres
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Perquè no s'han de collir plantes ni destorbar els animals?
+  valid: Per no pertorbar l'equilibri fràgil dels ecosistemes
+  hint: Preservar la natura ens farà sentir millors persones
+  invalid:
+    - Per no tenir por
+    - Per fer fugir els predadors
+    - Per la nostra mascota
+    - Perquè n'hi ha massa
+    - Per no cansar-se
+    - Perquè no ens agraden
+    - Perquè no podríem tornar mai més
+    - Collir plantes no canvia res
+  level: easy
+  topic: medi_fisic_antropic
+
+- question: Què hem de recollir i tornar a baixar quan anem a la muntanya?
+  valid: Les nostres deixalles
+  hint: No s'ha de deixar res a la muntanya que no hi fos abans de la nostra arribada
+  invalid:
+    - Terra
+    - Arbres
+    - Flors
+    - Petits animals
+    - Pedres
+    - Molsa
+    - Tora
+    - Pols
+  level: easy
+  topic: medi_fisic_antropic
+
+
+# FLORA I FAUNA 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Com es diu, de forma genèrica, el lloc on viu, menja i dorm un animal?
+  valid: Hàbitat
+  hint: És l'entorn on viu un ésser viu, on es desplaça, es nodreix i es reprodueix.
+  invalid:
+    - Boscos
+    - Prats
+    - Ambients
+    - Roca
+    - Llac
+    - Cova
+    - Forat
+    - Rius
+  level: medium
+  topic: flora_fauna
+
+- question: Quins animals tenen estructures òssies?
+  valid: Vertebrats
+  hint: Poden ser mamífers, ocells, rèptils, amfibis i peixos.
+  invalid:
+    - Invertebrats
+    - Bacteris
+    - Insectes
+    - Papallones
+    - Aranyes
+    - Erugues
+    - Caragols
+    - Cucs
+  level: medium
+  topic: flora_fauna
+
+- question: Quin d'aquests animals és de sang calenta?
+  valid: Marta
+  hint: La seva temperatura corporal és constant, no varia si canvia la temperatura exterior.
+  invalid:
+    - Llangardaix
+    - Truita
+    - Tritó
+    - Salamandra
+    - Cuc de terra
+    - Mosca
+    - Abella
+    - Llimac
+  level: medium
+  topic: flora_fauna
+
+- question: Quin animal canta obrint les plomes de la cua?
+  valid: Gall fer
+  hint: Els mascles competeixen per les femelles en llocs puntuals anomenats "cantaders".
+  invalid:
+    - Perdiu blanca
+    - Gat salvatge
+    - Picot negre
+    - Trencalòs
+    - Isard
+    - Mussol banyut
+    - Ratapenada
+    - Pit roig
+  level: medium
+  topic: flora_fauna
+
+- question: Quin d'aquests animals viu dins l'aigua?
+  valid: Truita
+  hint: Remunta els rius de muntanya saltant fora de l'aigua per capturar insectes. Pot arribar a menjar animals de la seva mateixa espècie (canibalisme)
+  invalid:
+    - Salamandra
+    - Tritó pirinenc
+    - Sargantana pallaresa
+    - Almesquera
+    - Aigüerola
+    - Llúdriga
+    - Marmota
+    - Serp d'aigua
+  level: medium
+  topic: flora_fauna
+
+- question: Quin arbust trobem a la zona obaga de la muntanya?
+  valid: Abarset
+  hint: Té branques tortuoses i la seva flor és de color fúcsia molt vistosa. Resisteix al fred cobert per la neu a l'hivern. Les abelles busquen el seu nèctar.
+  invalid:
+    - Bàlec
+    - Ginebró
+    - Salze
+    - Farigola
+    - Baladre
+    - Coscoll
+    - Cirerer
+    - Alzina
+  level: medium
+  topic: flora_fauna
+
+- question: Quina d'aquestes flors és molt tòxica?
+  valid: Tora blava
+  hint: Planta de gran mida, força alta, amb les flors de color blau o violeta intens en forma de casc.
+  invalid:
+    - Cotonera
+    - Dròsera
+    - Falguera
+    - Àrnica
+    - Lliri pirinenc
+    - Panical blau
+    - Carlina
+    - Rosa
+  level: medium
+  topic: flora_fauna
+
+- question: Quina d'aquestes flors té les fulles recobertes d'una substància enganxosa anomenada "mucílag"?
+  valid: Viola d'aigua
+  hint: Les seves fulles són de color groc fluorescent.
+  invalid:
+    - Dròsera
+    - Bossa del pastor
+    - Pensament
+    - Xicoia
+    - Marcòlic groc
+    - Trèvol
+    - Orquis
+    - Pulsatil·la
+  level: medium
+  topic: flora_fauna
+
+- question: Quin rosegador fa llargs períodes d'hibernació durant els mesos més freds d'hivern?
+  valid: Liró gris
+  hint: Aquest mamífer de petites dimensions passa la major part de vida als arbres, només baixa per buscar menjar. Té una cua molt llarga i peluda.
+  invalid:
+    - Esquirol
+    - Talpó
+    - Marta
+    - Guineu
+    - Gripau
+    - Mufló
+    - Grandalla
+    - Mussol del Pirineu
+  level: medium
+  topic: flora_fauna
+
+- question: Quin animal xiula per avisar del perill?
+  valid: Marmota
+  hint: És un animal que fa caus profunds sota terra en els que viu en grups. Sempre n'hi ha un del grup que vigila que no vingui cap predador.
+  invalid:
+    - Ós bru
+    - Guineu
+    - Fagina
+    - Ratapenada
+    - Llebre
+    - Cérvol
+    - Porc senglar
+    - Aligot
+  level: medium
+  topic: flora_fauna
+
+
+# BOSCOS 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Que provoca l'acció de la processionària als boscos?
+  valid: Possible mort dels arbres per defoliació
+  hint: Les erugues es protegeixen en uns bossots als pins
+  invalid:
+    - Pluges àcides que debiliten el bosc
+    - Colors a la tardor
+    - Més bolets
+    - Cavitats als troncs
+    - Creixement de l'arbre
+    - Humitat al bosc
+    - Més líquens als troncs
+    - Augment de la producció de pinyes
+  level: medium
+  topic: boscos
+
+- question: Quants cicles vitals fa l'eruga de la processionària?
+  valid: Cinc estadis
+  hint: Després d'acabar els cicles vitals, s'enterra i forma una crisàlide per transformar-se en papallona
+  invalid:
+    - 6 estadis
+    - 3 estadis
+    - No té cap cicle vital
+    - 1 estadi
+    - 4 estadis
+    - 2 estadis
+    - 10 estadis
+    - 7 estadis
+  level: medium
+  topic: boscos
+
+- question: Funció que no correspon als forats grans i ovalats que podem trobar a alguns pins, avets o trèmols
+  valid: Prevenció de l'incendi
+  hint: Els picots realitzen forats als troncs d'alguns arbres, la parella pot tornar-hi cada any per la reproducció o els deixa.
+  invalid:
+    - Niu de picot
+    - Àrea d'alimentació dels picots joves
+    - Niu de mussol pirinenc
+    - Niu de mallerengues
+    - Aixopluc per rosegadors
+    - Senyal per la protecció d'una espècie
+    - Reclam pels predadors
+    - Punt dèbil per l'arbre
+  level: medium
+  topic: boscos
+
+- question: Quina d'aquestes fases no forma part del cicle natural del bosc de pi negre?
+  valid: Explotació forestal
+  hint: El bosc de pi negre, com qualsevol ésser viu, també neix, creix i mor.
+  invalid:
+    - Regeneració
+    - Bardisses de regeneració alta
+    - Perxada baixa
+    - Perxada alta
+    - Bosc jove
+    - Bosc madur
+    - Bosc envellit
+    - Bosc caigut
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla caduca?
+  valid: Beç
+  hint: Als arbres de fulla caduca els hi cauen les fulles
+  invalid:
+    - Alzina
+    - Pi negre
+    - Pi roig
+    - Avet
+    - Ginebre
+    - Cedre
+    - Teix
+    - Xiprer
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla perenne?
+  valid: avet
+  hint: Als arbres de full perenne no els hi cauen les fulles
+  invalid:
+    - Moixera
+    - Beç
+    - pollancre
+    - Trèmol
+    - Salze
+    - Roure
+    - Cirerer
+    - Ametller
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests animals viu al bosc?
+  valid: Marta
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua molt gran
+  invalid:
+    - Ermini
+    - Trencalòs
+    - Voltor
+    - Àguila daurada
+    - Perdiu blanca
+    - Sargantana pallaresa
+    - Escurçó
+    - Vidriol
+    - Almesquera
+  level: medium
+  topic: boscos
+
+- question: Quin d'aquests arbres o arbusts no es troba a l'estatge subalpí?
+  valid: Roure martinenc
+  hint: Arbre típic dels boscos submediterranis
+  invalid:
+    - Pi negre
+    - Abarset
+    - Beç
+    - Moixera de guilla
+    - Gatsalze
+    - Salze pirinenc
+    - Ginebró
+    - Avet
+    - Bruguerola
+  level: medium
+  topic: boscos
+
+- question: Quin paper no juguen els boscos?
+  valid: Faciliten la contaminació de l'aire
+  hint: El bosc procura molts serveis, se'n diuen serveis ecosistèmics
+  invalid:
+    - Producció de fusta
+    - Aixopluc per nombrosos animals
+    - Canvi en el micro clima
+    - Estoc de carbó (mitigació del canvi climàtic)
+    - Protecció del sòl
+    - Filtra la pols
+    - Limita l'erosió
+    - Limita les inundacions
+    - Acolliment del públic
+  level: medium
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és falsa?
+  valid: El cicle natural del bosc de pi negre és inferior a 100 anys
+  hint: Molts arbres forestals vieu més de 100 anys
+  invalid:
+    - El bosc no produeix només fusta
+    - El bosc és un ecosistema
+    - El límit superior del bosc correspon a l'estatge alpí
+    - El bosc pot tenir més d'una espècie d'arbres
+    - El bosc protegeix el sòl
+    - El bosc pot ser una zona d'esbarjo
+    - El bosc és una trama important del paisatge muntanyenc
+    - El bosc pot tenir més de 1000 arbres a l'hectàrea
+    - El bosc de pi negre és el bosc típic de l'estatge subalpí pirinenc
+  level: medium
+  topic: boscos
+
+
+# ECOSISTEMES 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+# MEDI FÍSIC I ANTRÒPIC 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quina és la diferència entre els factors biòtics i factors abiòtics?
+  valid: Un factor abiòtic no és viu i els factors biòtics són éssers vius
+  hint: Un es refereix a la llum, l'aire, la humitat, etc. i l'altre a les plantes i als animals
+  invalid:
+    - Un factor biòtic és una muntanya i un factor abiòtic és un pi negre
+    - Un factor biòtic són els núvols i un factor abiòtic els ocells
+    - Un factor biòtic és una glacera i un factor abiòtic és una flor
+    - Un factor biòtic és un refugi i un factor abiòtic és un invertebrat
+    - Un factor biòtic són factors climàtics i un factor abiòtic és una cadena tròfica
+    - Un factor biòtic és una serralada i un factor abiòtic són els depredadors
+    - Un factor biòtic són els assentaments i un factor abiòtic són les vaques
+    - Un factor biòtic són els pobles i un factor abiòtic són els microorganismes
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin lloc està declarat com a Reserva de la Biosfera a Andorra?
+  valid: Ordino
+  hint: És un territori amb l'objectiu de conservar la diversitat cultural i el desenvolupament econòmic i social sostenible a través de la relació entre les persones i la natura
+  invalid:
+    - Andorra la Vella
+    - La Massana
+    - Canillo
+    - Encamp
+    - Pas de la Casa
+    - Escaldes-Engordany
+    - Sant Julià de Lòria
+    - No n'hi ha cap
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin sector econòmic productiu depèn més del clima a les nostres muntanyes?
+  valid: Agrícola
+  hint: La producció de vegetals depèn molt de les condicions meteorològiques
+  invalid:
+    - Indústria
+    - Asserradores
+    - Esquí
+    - Financer
+    - Comerç
+    - Mines
+    - Esport
+    - Turisme
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Què hem de fer per limitar els impactes a la flora, la fauna i al paisatge, així com respectar el maneig del bestiar?
+  valid: Seguir els camins marcats i respectar les tanques del bestiar
+  hint: Forma part del nostre comportament cívic
+  invalid:
+    - Riure molt
+    - Anar amb un calçat adequat
+    - Deixar el pas a les bicicletes
+    - No fer soroll
+    - Anar un darrere l'altre
+    - No banyant-se als rius
+    - No podem menjar
+    - Arrencar les flors del camí
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Què són els éssers vius?
+  valid: Factors biòtics
+  hint: Són components i organismes vius
+  invalid:
+    - Factors abiòtics
+    - Plaques tectòniques
+    - Un estatge de vegetació
+    - Pedra tosca
+    - Factors climàtics
+    - Un hàbitat
+    - Les roques
+    - Estacions de l'any
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin factor ecològic és important per la vegetació?
+  valid: El vent
+  hint: És un factor abiòtic que afecta la forma de creixement de les plantes i amplifica l'evapotranspiració
+  invalid:
+    - Neret
+    - Pi negre
+    - Avet
+    - Falguera
+    - Avellaner
+    - Molsa
+    - Ramaderia
+    - Dròsera
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quina és la zona on toca més el sol i provoca major escalfament?
+  valid: Solana
+  hint: Zona de les landes on trobem espècies com l'escobar o el ginebró
+  invalid:
+    - obaga
+    - Ombra
+    - Humitat
+    - Sequera
+    - Temperatura
+    - Glacera
+    - Neu
+    - Abarsetar
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quina és la zona amb menys sol?
+  valid: Obaga
+  hint: L'abarset s'hi conserva millor sota la neu durant l'hivern
+  invalid:
+    - Solana
+    - Xafogor
+    - Frescor
+    - Humitat
+    - Temperatura
+    - Glacera
+    - Arcalís
+    - Prats
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Perquè no s'han de collir plantes salvatges ni destorbar els animals?
+  valid: Per no pertorbar l'equilibri dels ecosistemes
+  hint: Preservar la natura ens farà sentir millors persones
+  invalid:
+    - Perquè són molt tòxiques
+    - Perquè els animals ens atacarien
+    - Perquè ens renyarà la mestra
+    - Perquè les flors es trenquen
+    - Perquè només les poden tocar els adults
+    - Perquè hauríem de pagar una multa
+    - Perquè no podríem tornar mai més
+    - Perquè fan pudor
+  level: medium
+  topic: medi_fisic_antropic
+
+- question: Quin grup de factors climàtics provoquen l'erosió de les muntanyes?
+  valid: Pendent, vent, pluja, desforestació, tempestes
+  hint: Constitueixen fenòmens que es produeixen en l'atmosfera
+  invalid:
+    - Terra, vent, foc, terratrèmols
+    - Lluna, volcans, núvols, pluja
+    - Terratrèmols, sol, vent, tempestes
+    - Inundacions, vent, neu, sol
+    - Foc, vent, neu, pluja
+    - Volcans, vent, fred, aigua
+    - Estrelles, lluna, volcans, tempestes
+    - Meteorits, sol, vent, neu
+  level: medium
+  topic: medi_fisic_antropic
+
+
+# FLORA I FAUNA 12 - 15 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quin d'aquests éssers vius no és heteròtrof?
+  valid: Dròsera
+  hint: Els éssers heteròtrofs necessiten matèria orgànica com a font d'energia
+  invalid:
+    - Vaca
+    - Cabirol
+    - Escolítid
+    - Bolet
+    - Daphnia Magna
+    - Opilió
+    - Cuc
+    - Processionària
+  level: hard
+  topic: flora_fauna
+
+- question: Quins animals són predadors amb un exoesquelet i 8 potes?
+  valid: Aranyes
+  hint: Predadors invertebrats que trobem en tots els hàbitats, tret de la mar i l'aire.
+  invalid:
+    - Papallones
+    - Escarabats
+    - Erugues
+    - Mol·luscs
+    - Caragols
+    - Cucs
+    - Peixos
+    - Rèptils
+  level: hard
+  topic: flora_fauna
+
+- question: A quin filó (grup) del regne animal pertanyen les salamandres?
+  valid: Amfibis
+  hint: Animals amb pell rica en glàndules i altament vascularitzada que permet la respiració cutània.
+  invalid:
+    - Peixos
+    - Virus
+    - Mamífers
+    - Ocells
+    - Micromamífers
+    - Ratapenades
+    - Serps
+    - Rèptils
+  level: hard
+  topic: flora_fauna
+
+- question: Quin animal té l'aspecte de rata amb un musell en forma de trompa mòbil?
+  valid: Almesquera
+  hint: Insectívor semi aquàtic amb peus posteriors palmats
+  invalid:
+    - Talpó
+    - Ratapenada
+    - Picot negre
+    - Llúdriga
+    - Truita
+    - Liró gris
+    - Vidriol
+    - Rata d'aigua
+  level: hard
+  topic: flora_fauna
+
+- question: Quins d'aquests animals són tots rèptils?
+  valid: Escurçó, serp verda i groga, vidriol, sargantana pallaresa
+  hint: Són tots animals de sang freda i tenen la pell coberta per escates
+  invalid:
+    - Serp verda i groga, escurçó, vidriol, salamandra
+    - Salamandra, tritó pirinenc, vidriol, sargantana pallaresa
+    - Sargantana pallaresa, salamandra, escurçó, vidriol
+    - Vidriol, serp verda i groga, granota roja, escurçó
+    - Escurçó, serp verda i groga, salamandra, sargantana pallaresa
+    - Tritó pirinenc, serp verda i groga, escurço, sargantana pallaresa
+    - Sargantana pallaresa, tritó pirinenc, salamandra, escurçó
+    - Escurçó, serp verda i groga, vidriol, tritó pirinenc
+  level: hard
+  topic: flora_fauna
+
+- question: Quina d'aquestes flors és antiinflamatòria?
+  valid: Àrnica
+  hint: És una flor de la família de les compostes amb els pètals de les lígules d'un color groc fosc
+  invalid:
+    - Grandalla
+    - Calta
+    - Panical blau
+    - Paradisea
+    - Regalèssia
+    - Trèvol
+    - Bàlec
+    - Gençana
+  level: hard
+  topic: flora_fauna
+
+- question: Com s'anomena el lloc on viu, menja i dorm un animal?
+  valid: Hàbitat
+  hint: Un lloc determinat per unes condicions ecològiques particulars. Pot ser terrestre o aquàtic
+  invalid:
+    - Pol nord
+    - Desert
+    - Medi aquàtic
+    - Cova
+    - Molleres
+    - Solana
+    - Estatge de vegetació
+    - Alt Pirineu
+  level: hard
+  topic: flora_fauna
+
+- question: Com s'anomena l'organisme simbiòtic format per una alga i un fong?
+  valid: Liquen
+  hint: És un bioindicador de la contaminació atmosfèrica. Pot sobreviure molts dies de sequera "en vida al ralentí", com si es fiqués en "standby"
+  invalid:
+    - Molsa
+    - Falguera
+    - Bolet
+    - Mol·lusc
+    - Gerd
+    - Nabiu
+    - Gòspit
+    - Petjades
+  level: hard
+  topic: flora_fauna
+
+- question: Planta vascular que presenta dues formes vitals (l'esporòfit -la més vivible- i el gametòfit)
+  valid: Falguera
+  hint: Algunes de les espècies són veritables arbustos. Necessiten viure en llocs humits i necessiten aigua durant la seva reproducció
+  invalid:
+    - Liquens
+    - Fongs
+    - Algues
+    - Molsa
+    - Dent de lleó
+    - Rosella
+    - Esquist
+    - Limonita
+  level: hard
+  topic: flora_fauna
+
+- question: Animal vertebrat, de sang freda, que viu exclusivament en tarteres a més de 2.200 m d'altitud
+  valid: Sargantana pallaresa
+  hint: És un animal endèmic del Pirineu d'alt valor patrimonial
+  invalid:
+    - Talpó de tartera
+    - Almesquera
+    - Liró gris
+    - Gripau
+    - Rata d'aigua
+    - Llúdriga
+    - Salamandra
+    - Perdiu blanca
+  level: hard
+  topic: flora_fauna
+
+
+# BOSCOS 12 - 15 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Que provoca l'acció de la processionària als boscos?
+  valid: Possible mort dels arbres per defoliació
+  hint: Les erugues es protegeixen en uns bossots que elaboren als pins
+  invalid:
+    - Pluges àcides que debiliten el bosc
+    - Colors a la tardor
+    - Més bolets
+    - Cavitats als troncs
+    - Creixement de l'arbre
+    - Humitat al bosc
+    - Més líquens als troncs
+    - Augment de la producció de pinyes
+  level: hard
+  topic: boscos
+
+- question: Quants cicles vitals fa l'eruga de la processionària?
+  valid: Cinc estadis
+  hint: Després d'acabar els cicles vitals, s'enterra i forma una crisàlide per transformar-se en papallona
+  invalid:
+    - 6 estadis
+    - 3 estadis
+    - No té cap cicle vital
+    - 1 estadi
+    - 4 estadis
+    - 2 estadis
+    - 10 estadis
+    - 7 estadis
+  level: hard
+  topic: boscos
+
+- question: Quina afirmació és falsa, respecte a les cavitats de picots negres?
+  valid: Es fan en arbres de perxada alta
+  hint: Els picots realitzen forats als troncs d'alguns arbres madurs, la parella pot tornar-hi cada any per la reproducció o els deixa
+  invalid:
+    - És l'entrada del niu
+    - És l'àrea d'alimentació dels picots joves
+    - Pot ser el niu del mussol pirinenc
+    - Pot ser el niu de la mallerenga
+    - És aixopluc per rosegadors
+    - És senyal per la protecció d'una espècie
+    - És un reclam pels predadors
+    - És un punt dèbil per l'arbre
+  level: hard
+  topic: boscos
+
+- question: Quina és la fase inicial del cicle natural del pi negre?
+  valid: La regeneració
+  hint: Derivada de les llavors caigudes a terra.
+  invalid:
+    - Bardisses de petits arbusts
+    - Forta acumulació de biomassa de 130 a 200 anys
+    - Bosc obert amb arbres morts i caiguts de 200 a 350 anys
+    - Bosc madur amb densitat encara alta de 70 a 130 anys
+    - Bosc de roure
+    - Bosc de beç
+    - Bosc caigut
+    - Bosc cremat
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla caduca?
+  valid: Beç
+  hint: Li cauen les fulles
+  invalid:
+    - Alzina
+    - Pi negre
+    - Pi roig
+    - Avet
+    - Ginebró
+    - Cedre
+    - Teix
+    - Xiprer
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests arbres és de fulla perenne?
+  valid: Alzina
+  hint: No li cauen les fulles
+  invalid:
+    - Moixera de guilla
+    - Beç
+    - Pollancre
+    - Trèmol
+    - Gatsalze
+    - Roure de fulla gran
+    - Cirerer
+    - Om
+  level: hard
+  topic: boscos
+
+- question: Quin d'aquests animals viu al bosc?
+  valid: Marta
+  hint: És un animal molt discret que s'amaga als arbres. Té un pelatge beix al pit i una cua
+  invalid:
+    - Ermini
+    - Trencalòs
+    - Voltor
+    - Àguila daurada
+    - Perdiu blanca
+    - Sargantana pallaresa
+    - Escurçó
+    - Vidriol
+    - Almesquera
+  level: hard
+  topic: boscos
+
+- question: Quin paper no juga el bosc?
+  valid: Facilita la contaminació de l'aire
+  hint: El bosc procura molts serveis, se'n diuen serveis ecosistèmics
+  invalid:
+    - Producció de fusta
+    - Aixopluc per nombrosos animals
+    - Canvi en el microclima
+    - Estoc de carbó (mitigació del canvi climàtic)
+    - Protecció del sol
+    - Filtra la pols
+    - Limita l'erosió
+    - Limita les inundacions
+    - Acolliment del públic
+  level: hard
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és correcta?
+  valid: Els boscos vells presenten una gran biodiversitat
+  hint: El bosc és un sistema complex d'éssers vius
+  invalid:
+    - El bosc no és un ecosistema
+    - El bosc ha generat llegendes populars
+    - La sargantana pallaresa és un animal forestal
+    - No es troben líquens al bosc
+    - El picot negre fa el seu niu per sobre les branques més altes dels pins
+    - El beç no és un arbre pioner
+    - El bosc no protegeix mai de les allaus
+    - El bosc no juga cap paper de filtre, tampoc limita l'erosió
+    - L'abarset és un arbust que indica la solana
+  level: hard
+  topic: boscos
+
+- question: Quina d'aquestes afirmacions és falsa?
+  valid: El cicle natural del bosc de pi negre és inferior a 100 anys
+  hint: Molts arbres forestals viuen més de 100 anys
+  invalid:
+    - El bosc no produeix només fusta
+    - El bosc és un ecosistema
+    - El límit superior del bosc correspon a l'estatge alpí
+    - El bosc pot tenir més d'una espècie d'arbres
+    - El bosc protegeix el sòl
+    - Un bosc pot ser una zona d'esbarjo, quan sigui accessible
+    - El bosc és una trama important del paisatge muntanyenc
+    - Un bosc pot tenir més de 1000 arbres a l'hectàrea
+    - El bosc de pi negre és el bosc típic de l'estatge subalpí pirinenc
+  level: hard
+  topic: boscos
+
+
+# ECOSISTEMES 12 - 15 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Quina és la bona proposició de cadena tròfica (des baix a dalt)
+  valid: Productors, consumidors primaris, predadors, superpredadors, detritívors
+  hint: És una representació gràfica que mostra les relacions alimentàries de qui menja a qui
+  invalid:
+    - Superdepredadors, predadors, superpredadors, productors
+    - Productors, consumidors primaris, superdepredadors, detritívors
+    - Productors, consumidors primaris, consumidors secundaris, superdepredadors, consumidors terciaris
+    - Productors, consumidors terciaris, consumidors primaris, consumidors secundaris, detritívors
+    - Consumidors primaris, productors, superdepredadors, detritívors, predadors
+    - Detritívors, superdepredadors, predadors, consumidors primaris, productors
+    - Predadors, productors, consumidors primaris, consumidors secundaris, superdepredadors
+    - Consumidors primaris, productors, superdepredadors, predadors, detritívors
+  level: hard
+  topic: ecosistemes
+
+- question: Com es pot considerar l'àguila daurada en una cadena tròfica?
+  valid: Superpredador
+  hint: Es situa a la part alta de la cadena tròfica
+  invalid:
+    - Predador
+    - Ocell
+    - Rapinyaire
+    - Detritívor
+    - Insectívor
+    - Carronyaire
+    - Productor
+    - Volant
+  level: hard
+  topic: ecosistemes
+
+- question: En quin ecosistema, que estigui en bona salut, no trobem predadors?
+  valid: Cap
+  hint: La cadena tròfica es reprodueix en tots els ecosistemes
+  invalid:
+    - Estanys
+    - Rius
+    - Sòl
+    - Aire
+    - Prats alpins
+    - Boscos
+    - Zones humides
+    - Landes
+  level: hard
+  topic: ecosistemes
+
+- question: Quin parell d'ambients presenten la més gran diversitat biològica?
+  valid: Zones humides i boscos vells
+  hint: Són hàbitats madurs
+  invalid:
+    - Prats alpins i roques
+    - Roques i tarteres
+    - Bosc jove i rierol
+    - Zones humides i tarteres
+    - Landes i prats montans
+    - Tarteres i prats alpins
+    - Bosc de ribera i rierol
+    - Estany i rierols
+  level: hard
+  topic: ecosistemes
+
+- question: Quin ecosistema no es troba a Andorra?
+  valid: Manglar
+  hint: Format per arbres que toleren la sal
+  invalid:
+    - Bosc subalpí
+    - Prat alpí
+    - Roques calcàries
+    - Bosc submediterrani
+    - Mollera
+    - Estany
+    - Riu
+    - Landa
+  level: hard
+  topic: ecosistemes
+
+- question: Quin d'aquests animals viu a zones humides?
+  valid: Salamandra
+  hint: És inconfusible pels seus colors vius
+  invalid:
+    - Vidriol
+    - Tritó
+    - Granota roja
+    - Gripau
+    - Almesquera
+    - Truita
+    - Escurçó
+    - Sargantana pallaresa
+  level: hard
+  topic: ecosistemes
+
+- question: Ecosistema cap d'una sèrie dinàmica de la vegetació a l'estatge subalpí
+  valid: Bosc de pi negre
+  hint: S'hi troben els arbres que viuen a més alçada
+  invalid:
+    - Prats alpins
+    - Roques i tarteres
+    - Molleres
+    - Bosc de pi roig
+    - Prat de dall
+    - Landa d'abarset
+    - Prat de gespit
+    - Landa de ginebró
+  level: hard
+  topic: ecosistemes
+
+- question: A quins estatges es sol trobar l'alzina?
+  valid: Mediterrani i supramediterrani (montà)
+  hint: El bosc d'alzina està ben representat al sud del país i algunes solanes de la part central
+  invalid:
+    - Alpí
+    - Subalpí
+    - Montà i subalpí
+    - Subalpí i alpí
+    - Mediterrani
+    - Supramediterrani
+    - Montà i supramediterrani
+    - Montà
+  level: hard
+  topic: ecosistemes
+
+- question: Quin no és un ecosistema?
+  valid: Falgueres
+  hint: L'ecosistema està format per un medi físic i uns éssers vius que es relacionen entre ells
+  invalid:
+    - Bosc de roure
+    - Bosc de pi negre
+    - Landa de ginebró
+    - Mollera
+    - Estany
+    - Prat alpí
+    - Roques
+    - Sòl bru àcid
+  level: hard
+  topic: ecosistemes
+
+- question: Quin element no circula (en sentit ampli de la paraula) en un ecosistema?
+  valid: Plantes
+  hint: En un ecosistema, els elements químics tenen una vida cíclica, els éssers vius es desplacen
+  invalid:
+    - Matèria
+    - Carbó
+    - Aigua
+    - Nitrogen
+    - Animals
+    - Energia
+    - Microorganismes
+    - Predadors
+  level: hard
+  topic: ecosistemes
+
+
+# MEDI FÍSIC I ANTRÒPIC 12 - 15 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::

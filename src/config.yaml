@@ -1,0 +1,60 @@
+airtable:
+  base: appwdmCZrCmknlpbc
+  concepts:
+    view: List
+    fields:
+      - name
+      - description
+      - bg
+      - _parent
+      - _children
+      - _related
+      - _predator
+      - _prey
+      - media
+  tour:
+    view: Tour
+    fields:
+      - name
+      - description
+      - lat
+      - lon
+      - zoom
+      - bearing
+      - alt
+      - estatges
+      - related
+
+quiz:
+  HINT_SCORE: 0.5       # Punctuation for hinted answer
+  QUESTION_COUNT: 10    # Number of questions
+  ANSWER_COUNT:         # Number of answers
+    easy: 2
+    medium: 3
+    hard: 4
+  COUNTDOWN:            # Duration of question, countdown (in seconds)
+    easy: 60
+    medium: 40
+    hard: 20
+  STEPDOWN: 0.5         # Countdown duration (in seconds)
+  VALIDATION_TIME: 3    # Duration of a answer validation (in seconds)
+  levels:
+    - easy
+    - medium
+    - hard
+  topics:
+    - flora_fauna
+    - ecosistemes
+    - boscos
+    - medi_fisic_antropic
+
+map:
+  layer: mapbox://styles/mapbox/satellite-v9
+  duration: 6000
+  disable:
+    - scrollZoom
+    - dragPan
+    - dragRotate
+    - doubleClickZoom
+    - touchZoomRotate
+    - boxZoom
