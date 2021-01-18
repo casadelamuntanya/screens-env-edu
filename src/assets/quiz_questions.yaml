@@ -915,6 +915,155 @@
 
 
 # ECOSISTEMES 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què mengen els superdepredadors (depredadors alfa) de la cadena tròfica?
+  valid: Herbívors i carnívors
+  hint: La cadena alimentària són els éssers vius que depenen els uns dels altres per alimentar-se
+  invalid:
+    - Només carnívors
+    - Només insectes
+    - Només isards
+    - Només rèptils
+    - Només ocells
+    - Només conills i llebres
+    - Només vaques
+    - Fongs
+  level: medium
+  topic: ecosistemes
+
+- question: Com s'anomenen els animals que mengen herba?
+  valid: Herbívors
+  hint: Estan al segon nivell de la cadena alimentària
+  invalid:
+    - Carnívors
+    - detritívors
+    - Mamífers
+    - Peixos
+    - Amfibis
+    - Rèptils
+    - Insectes
+    - Óssos
+  level: medium
+  topic: ecosistemes
+
+- question: A quin hàbitat s'alimenta l'isard a l'hivern, quan hi ha molta neu?
+  valid: Bosc
+  hint: A l'hivern, l'isard té dificultats per trobar aliment degut al gruix de neu
+  invalid:
+    - Zones humides
+    - Prats
+    - Landes
+    - Bosc mediterrani
+    - Garriga
+    - Zona Antàrtida
+    - Pol nord
+    - Roques i tarteres
+  level: medium
+  topic: ecosistemes
+
+- question: Quins ambients presenten la més gran diversitat biològica?
+  valid: Zones humides i boscos vells
+  hint: Són hàbitats madurs
+  invalid:
+    - Prats alpins i roques
+    - Roques i tarteres
+    - Bosc jove i rierol
+    - Zones humides i tarteres
+    - Landes i prats montans
+    - Tarteres i prats alpins
+    - Bosc de ribera i rierol
+    - Estany i rierols
+  level: medium
+  topic: ecosistemes
+
+- question: Quin ecosistema no trobem a Andorra?
+  valid: Manglar
+  hint: Format per arbres que toleren la sal
+  invalid:
+    - Bosc subalpí
+    - Prat alpí
+    - Roques calcàries
+    - Bosc submediterrani
+    - Mollera
+    - Estany
+    - Riu
+    - Landa
+  level: medium
+  topic: ecosistemes
+
+- question: Quins són els productors dins de la cadena tròfica?
+  valid: Vegetals i fitoplàncton
+  hint: Són aquells éssers vius capaços de produir matèria orgànica
+  invalid:
+    - Vaca i pollastre
+    - Ocells i rèptils
+    - Cucs i mol·luscs
+    - Peixos i mol·luscs
+    - Abelles i aranyes
+    - Carnívors i detritívors
+    - Predadors i detritívors
+    - Insectes i miriàpodes
+  level: medium
+  topic: ecosistemes
+
+- question: A quina d'aquestes zones trobem la perdiu blanca?
+  valid: Roques i tarteres
+  hint: Les unes generen les altres per l'acció del gel i desgel (gelifracció)
+  invalid:
+    - Zones humides
+    - Avetar
+    - Bosc de roure
+    - Bosc mediterrani
+    - Estany
+    - Riu
+    - A dalt dels arbres
+    - En una cova
+  level: medium
+  topic: ecosistemes
+
+- question: Quin dels següents no és un ecosistema?
+  valid: Falgueres
+  hint: L'ecosistema està format per un medi físic i uns éssers vius que es relacionen
+  invalid:
+    - Bosc de roure
+    - Bosc de pi negre
+    - Landa de ginebró
+    - Mollera
+    - Estany
+    - Prat alpí
+    - Roques
+    - Sòl bru àcid
+  level: medium
+  topic: ecosistemes
+
+- question: Quin element no circula (en sentit ampli de la paraula) en un ecosistema?
+  valid: Plantes
+  hint: En un ecosistema, els elements químics tenen una vida cíclica, els éssers vius es desplacen
+  invalid:
+    - Matèria
+    - Carbó
+    - Aigua
+    - Nitrogen
+    - Animals
+    - Energia
+    - Microorganismes
+    - Predadors
+  level: medium
+  topic: ecosistemes
+
+- question: A què es pot comparar el conjunt de les relacions entre éssers vius d'un ecosistema?
+  valid: Xarxa
+  hint: Sistema complex que vincula tots els éssers vius
+  invalid:
+    - Equip
+    - Predadors
+    - Herbívors
+    - Colònies
+    - Carbó
+    - Hàbitat
+    - Sòl
+    - Antròpic
+  level: medium
+  topic: ecosistemes
 
 
 # MEDI FÍSIC I ANTRÒPIC 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
