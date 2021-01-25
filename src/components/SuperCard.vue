@@ -19,11 +19,12 @@
 			<div v-if="item.media && item.media.length" class="super-card__media expandable">
 				<scroller v-slot="{ item: media }" :items="item.media">
 					<card
+						v-swipe:200.right.left="swipeMedia"
 						:item="media"
-						:class="{ 'active': active === media.id }"
+						:class="{ 'active': activeMedia === media.id }"
 						attribution
-						@click.native.stop="activate(media)" />
-					<div class="fade" @click.stop="activate()" />
+						@click.native.stop="showMedia(media)" />
+					<div class="fade" @click.stop="showMedia()" />
 				</scroller>
 			</div>
 			<div v-if="item.children && item.children.length" class="super-card__children">
@@ -56,9 +57,11 @@
 <script>
 import Card from './Card.vue';
 import Scroller from './Scroller.vue';
+import Swipe from '../utils/directive.swipe';
 
 export default {
 	name: 'SuperCard',
+	directives: { Swipe },
 	components: { Card, Scroller },
 	props: {
 		item: { type: Object, required: true },
@@ -68,7 +71,7 @@ export default {
 	data() {
 		return {
 			expanded: false,
-			active: undefined,
+			activeMedia: undefined,
 		};
 	},
 	computed: {
@@ -84,8 +87,17 @@ export default {
 		select(item) {
 			this.$emit('select', item);
 		},
-		activate({ id } = {}) {
-			this.active = id;
+		showMedia({ id } = {}) {
+			this.activeMedia = id;
+		},
+		swipeMedia({ direction }) {
+			const { item, activeMedia } = this;
+			if (!activeMedia) return;
+			const step = direction === 'right' ? -1 : 1;
+			const i = item.media.findIndex(media => media.id === activeMedia) + step;
+			if (i >= 0 && i < item.media.length) {
+				this.activeMedia = item.media[i].id;
+			}
 		},
 		toggleExpandedContent() {
 			this.expanded = !this.expanded;
