@@ -13,7 +13,7 @@ card:
 
 quiz:
   title: Trivia
-  select_level: Selecciona la edat
+  select_level: Selecciona l'edat
   level: Edat
   levels:
     easy: 6-8
