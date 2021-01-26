@@ -3,6 +3,7 @@
 		<!-- RESULT -->
 		<div v-if="finished" class="results">
 			<div class="score">
+				<img :src="meme">
 				<h3>{{ $t('quiz.score') }}</h3>
 				<strong>{{ score }}</strong> / {{ config.QUESTION_COUNT }}
 			</div>
@@ -119,6 +120,10 @@ export default {
 			const count = config.ANSWER_COUNT[this.selectedLevel] - 1;
 			const answers = shuffle([...shuffle(invalid).slice(0, count), valid]);
 			return { question, answers, valid, hint };
+		},
+		meme() {
+			const score = Math.floor((this.score * 10) / config.QUESTION_COUNT);
+			return config.memes[this.selectedLevel][score];
 		},
 		hurryLevel() {
 			return Math.ceil(((this.countdown * 100) / config.COUNTDOWN[this.selectedLevel]) / 25);
