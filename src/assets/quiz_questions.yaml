@@ -915,6 +915,155 @@
 
 
 # ECOSISTEMES 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què mengen els superdepredadors (depredadors alfa) de la cadena tròfica?
+  valid: Herbívors i carnívors
+  hint: La cadena alimentària són els éssers vius que depenen els uns dels altres per alimentar-se
+  invalid:
+    - Només carnívors
+    - Només insectes
+    - Només isards
+    - Només rèptils
+    - Només ocells
+    - Només conills i llebres
+    - Només vaques
+    - Fongs
+  level: medium
+  topic: ecosistemes
+
+- question: Com s'anomenen els animals que mengen herba?
+  valid: Herbívors
+  hint: Estan al segon nivell de la cadena alimentària
+  invalid:
+    - Carnívors
+    - detritívors
+    - Mamífers
+    - Peixos
+    - Amfibis
+    - Rèptils
+    - Insectes
+    - Óssos
+  level: medium
+  topic: ecosistemes
+
+- question: A quin hàbitat s'alimenta l'isard a l'hivern, quan hi ha molta neu?
+  valid: Bosc
+  hint: A l'hivern, l'isard té dificultats per trobar aliment degut al gruix de neu
+  invalid:
+    - Zones humides
+    - Prats
+    - Landes
+    - Bosc mediterrani
+    - Garriga
+    - Zona Antàrtida
+    - Pol nord
+    - Roques i tarteres
+  level: medium
+  topic: ecosistemes
+
+- question: Quins ambients presenten la més gran diversitat biològica?
+  valid: Zones humides i boscos vells
+  hint: Són hàbitats madurs
+  invalid:
+    - Prats alpins i roques
+    - Roques i tarteres
+    - Bosc jove i rierol
+    - Zones humides i tarteres
+    - Landes i prats montans
+    - Tarteres i prats alpins
+    - Bosc de ribera i rierol
+    - Estany i rierols
+  level: medium
+  topic: ecosistemes
+
+- question: Quin ecosistema no trobem a Andorra?
+  valid: Manglar
+  hint: Format per arbres que toleren la sal
+  invalid:
+    - Bosc subalpí
+    - Prat alpí
+    - Roques calcàries
+    - Bosc submediterrani
+    - Mollera
+    - Estany
+    - Riu
+    - Landa
+  level: medium
+  topic: ecosistemes
+
+- question: Quins són els productors dins de la cadena tròfica?
+  valid: Vegetals i fitoplàncton
+  hint: Són aquells éssers vius capaços de produir matèria orgànica
+  invalid:
+    - Vaca i pollastre
+    - Ocells i rèptils
+    - Cucs i mol·luscs
+    - Peixos i mol·luscs
+    - Abelles i aranyes
+    - Carnívors i detritívors
+    - Predadors i detritívors
+    - Insectes i miriàpodes
+  level: medium
+  topic: ecosistemes
+
+- question: A quina d'aquestes zones trobem la perdiu blanca?
+  valid: Roques i tarteres
+  hint: Les unes generen les altres per l'acció del gel i desgel (gelifracció)
+  invalid:
+    - Zones humides
+    - Avetar
+    - Bosc de roure
+    - Bosc mediterrani
+    - Estany
+    - Riu
+    - A dalt dels arbres
+    - En una cova
+  level: medium
+  topic: ecosistemes
+
+- question: Quin dels següents no és un ecosistema?
+  valid: Falgueres
+  hint: L'ecosistema està format per un medi físic i uns éssers vius que es relacionen
+  invalid:
+    - Bosc de roure
+    - Bosc de pi negre
+    - Landa de ginebró
+    - Mollera
+    - Estany
+    - Prat alpí
+    - Roques
+    - Sòl bru àcid
+  level: medium
+  topic: ecosistemes
+
+- question: Quin element no circula (en sentit ampli de la paraula) en un ecosistema?
+  valid: Plantes
+  hint: En un ecosistema, els elements químics tenen una vida cíclica, els éssers vius es desplacen
+  invalid:
+    - Matèria
+    - Carbó
+    - Aigua
+    - Nitrogen
+    - Animals
+    - Energia
+    - Microorganismes
+    - Predadors
+  level: medium
+  topic: ecosistemes
+
+- question: A què es pot comparar el conjunt de les relacions entre éssers vius d'un ecosistema?
+  valid: Xarxa
+  hint: Sistema complex que vincula tots els éssers vius
+  invalid:
+    - Equip
+    - Predadors
+    - Herbívors
+    - Colònies
+    - Carbó
+    - Hàbitat
+    - Sòl
+    - Antròpic
+  level: medium
+  topic: ecosistemes
 
 
 # MEDI FÍSIC I ANTRÒPIC 9 - 11 anys ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1530,3 +1679,169 @@
 
 
 # MEDI FÍSIC I ANTRÒPIC 12 - 15 anys :::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- question: Què són els factors biòtics?
+  valid: Els components vius d'un ecosistema
+  hint: Relacionat als éssers vius
+  invalid:
+    - Components físics i químics no vius a l'ecosistema
+    - Simbiosi entre un fong i una alga
+    - Substància enganxosa que segrega la dròsera
+    - Orificis que té la salamandra a la pell
+    - Espores reproductives d'alguns vegetals
+    - Energia derivada de la matèria orgànica
+    - Insectes xilòfags (que s'alimenten de la fusta)
+    - Vinculat a la saba d'una planta
+    - Desgast produït a la superfície d'un cos pel frec
+    - Òrgans de les plantes per fixar el diòxid de carboni
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Què és una reserva de la biosfera?
+  valid: Un espai de gran valor natural i cultural amb un desenvolupament sostenible
+  hint: Espais amb conservació del patrimoni i bona relació entre l'home i la natura
+  invalid:
+    - Un espai ocupat per una determinada població biològica
+    - Un espai sense presència humana
+    - Un espai natural protegit per la llei
+    - Extensió d'aigua dolça que es troba separada del mar
+    - País petit amb 60% del seu territori protegit pels valors naturals i culturals
+    - Espai sense introducció de substàncies químiques
+    - Qualsevol àrea que tingui assentaments humans
+    - Formació vegetal dominada per espècies arbòries
+    - Espai amb el factor climàtic controlat
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Què és un factor abiòtic?
+  valid: Component d'un ecosistema que no té vida, però influeix els éssers vius
+  hint: Es refereix a la llum, l'aire, la humitat, el vent, etc.
+  invalid:
+    - Éssers vius
+    - Totes les espècies del regne animal
+    - Els descomponedors, com els fongs, bacteris, insectes
+    - Les 4 parts d'una flor
+    - El cicle biològic de la processionària del pi
+    - Els animals que no tenen columna vertebral
+    - La fusió de la neu i les glaceres amb l'augment de temperatura
+    - El canvi del clima produït per l'activitat humana
+    - Planetes del sistema solar
+    - Líquens
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: A quin sector pertany l'activitat de permacultura?
+  valid: Agrícola
+  hint: La producció
+  invalid:
+    - Ramaderia
+    - Pesca
+    - Esquí
+    - Fusta
+    - Minerals
+    - Turisme
+    - Caça
+    - Indústria
+    - Esquist
+    - Líquens
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Què fer per limitar els impactes sobre la flora, la fauna i al paisatge, així com respectar el maneig del bestiar?
+  valid: Seguir els camins marcats i respectar les tanques
+  hint: Forma part del nostre comportament cívic
+  invalid:
+    - Cal evitar agafar flors innecessàries, només les que són medicinals
+    - No tirar mai bosses de plàstic, només si són bosses de roba
+    - Fomentar l'ús dels pesticides
+    - Fomentar la caça, ja que hi ha massa espècies de fauna i provoquen destrosses
+    - Fer nous camins fora dels que ja estan delimitats
+    - Utilitzar pals de trekking, així drenen els camins, molt necessari per a la flora
+    - Anar deixant rastres de menjar perquè la fauna es pugui alimentar quan sigui escàs
+    - Prohibit córrer i cridar
+    - Potenciar el turisme de massa
+    - No podem fer ús del mòbil
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Quina és la zona on tenim més variacions de temperatura a l'hivern entre dia i nit
+  valid: Solana
+  hint: Zones on trobem per exemple, landes d'escobar o de ginebró
+  invalid:
+    - Obaga
+    - Zona d'ombra
+    - Estany
+    - Antàrtida
+    - Glacera
+    - Zona prohibida
+    - Estatge mediterrani
+    - Avetar
+    - Una cova
+    - Hemisferi Nord
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Quin és un factor ecològic important per la vegetació?
+  valid: Vent
+  hint: Factor ecològic abiòtic que afecta la forma de creixement de les plantes i augmenta l'evapotranspiració
+  invalid:
+    - Neret
+    - Pi negre
+    - Avet
+    - Falguera
+    - Avellaner
+    - Molsa
+    - Ramaderia
+    - Dròsera
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Quina d'aquestes propostes derivaria més del canvi climàtic?
+  valid: Pèrdua d'espècies, incendis, aiguats, augment de temperatura
+  hint: Produït per l'activitat humana, afecta la biodiversitat i els factors abiòtics
+  invalid:
+    - Aire, la gent, els animals, les bicicletes
+    - Les pedres, el mar, la sorra, la sal
+    - Els cotxes, la pluja, roba tèxtil, calçat
+    - L'aigua, incendis, la fauna, la vegetació
+    - Incendis, inundacions, xarxes socials, la cultura
+    - Twitter, Facebook, whatsapp, Instagram
+    - Reunions socials, viatjar amb avió, viatjar amb transport públic, desplaçaments
+    - Les estacions de l'any, les grans nevades, fred extrem, calor extrema
+    - Desaparició de les espècies, població envellida, alta natalitat, malalties
+    - Guerres, por, fam, malalties
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Quins són factors abiòtics que alteren les roques i els sòls?
+  valid: Gel, desgel, vent, pluja, neu
+  hint: Són fenòmens climàtics
+  invalid:
+    - Terra, foc, aigua, estrelles, volcans
+    - Lluna, cel, estrelles, aigua
+    - Terratrèmols, inundacions, lluna, sol
+    - Estrelles, neu, foc, terratrèmols, volcans
+    - Granit, neu, pluja, gel, lluna
+    - Tempesta, lluna, inundacions, foc, aigua
+    - Volcans, terratrèmols, tempestes, meteorits, inundacions
+    - Meteorits, pluja, estrelles, lluna, Terra
+    - Sol, Terra, estrelles, meteorits, volcans
+    - Neu, vent, inundacions, lluna, foc
+  level: hard
+  topic: medi_fisic_antropic
+
+- question: Quina funció tenen les abelles al medi ambient?
+  valid: La pol·linització de més del 30% dels aliments que consumim
+  hint: Sense abelles una part de la nostra alimentació desapareixeria, així com pels herbívors
+  invalid:
+    - Factor abiòtic
+    - El creixement de les plantes
+    - Allargar la primavera
+    - Més colors a les flors
+    - Limitar l'escalfament global
+    - Limitar la contaminació
+    - Augmentar la pluviometria
+    - Fer marxar els mamífers
+    - Augmentar els incendis
+    - Minvar el canvi climàtic.
+  level: hard
+  topic: medi_fisic_antropic

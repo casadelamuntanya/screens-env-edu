@@ -35,7 +35,7 @@ quiz:
   COUNTDOWN:            # Duration of question, countdown (in seconds)
     easy: 60
     medium: 40
-    hard: 20
+    hard: 40
   STEPDOWN: 0.5         # Countdown duration (in seconds)
   VALIDATION_TIME: 3    # Duration of a answer validation (in seconds)
   levels:
@@ -47,6 +47,44 @@ quiz:
     - ecosistemes
     - boscos
     - medi_fisic_antropic
+
+  memes:
+    easy:
+      - https://media.giphy.com/media/b6IbGw9QOCXqo/giphy.gif
+      - https://media.giphy.com/media/RH8LAPbFTVSXHpsNnK/giphy.gif
+      - https://media.giphy.com/media/s3qCaXmFQqJsQ/giphy.gif
+      - https://media.giphy.com/media/afqT2ykIlYcVi/giphy.gif
+      - https://media.giphy.com/media/kLwLR5vY5OsFy/giphy.gif
+      - https://media.giphy.com/media/nDSlfqf0gn5g4/giphy.gif
+      - https://media.giphy.com/media/P7s5baPQ6mrrq/giphy.gif
+      - https://media.giphy.com/media/f95LXASINhuIv7e7Od/giphy.gif
+      - https://media.giphy.com/media/h4HHnU9RXd1Dvc24Gs/giphy.gif
+      - https://media.giphy.com/media/2YiQYEWECO2QIm8rP9/giphy.gif
+      - https://media.giphy.com/media/ZbZNih8ILJWwpaU0vp/giphy.gif
+    medium:
+      - https://media.giphy.com/media/3ohuPpHxUp4GNNKvLy/giphy.gif
+      - https://media.giphy.com/media/ZIG63RdogLgqI/giphy.gif
+      - https://media.giphy.com/media/l1Et6lOOnAjhdK3F6/giphy.gif
+      - https://media.giphy.com/media/3o8dFjPqUyYwvZxcEU/giphy.gif
+      - https://media.giphy.com/media/3ov9k5dEvxf264kXKg/giphy.gif
+      - https://media.giphy.com/media/L2NvR9yyfQ1QmMTstU/giphy.gif
+      - https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif
+      - https://media.giphy.com/media/l1J9ODTGkF996dNzG/giphy.gif
+      - https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif
+      - https://media.giphy.com/media/9DpPdJEna1G3mG99Wv/giphy.gif
+      - https://media.giphy.com/media/62PP2yEIAZF6g/giphy.gif
+    hard:
+      - https://media.giphy.com/media/D0RvPABUNF3AQ/giphy.gif
+      - https://media.giphy.com/media/3owypf6HrM3J7UTvAA/giphy.gif
+      - https://media.giphy.com/media/RBeddeaQ5Xo0E/giphy.gif
+      - https://media.giphy.com/media/l0CLTGoSHtPVl1n0Y/giphy.gif
+      - https://media.giphy.com/media/Jq824R93JsLwZCaiSL/giphy.gif
+      - https://media.giphy.com/media/4PT6v3PQKG6Yg/giphy.gif
+      - https://media.giphy.com/media/Od0QRnzwRBYmDU3eEO/giphy.gif
+      - https://media.giphy.com/media/srg19CG0cKMuI/giphy.gif
+      - https://media.giphy.com/media/KfqdYiISwUsFaCgd7G/giphy.gif
+      - https://media.giphy.com/media/Aff4ryYiacUO4/giphy.gif
+      - https://media.giphy.com/media/3o7qDLkrKr034Z3hQI/giphy.gif
 
 map:
   layer: mapbox://styles/mapbox/satellite-v9
