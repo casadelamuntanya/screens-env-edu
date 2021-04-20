@@ -2,7 +2,10 @@
 	<div class="navigation">
 		<hgroup>
 			<h1>{{ $t('env_edu') }}</h1>
-			<h3>{{ $t('env_edu_sub') }}</h3>
+			<h3 class="biosfera-ad">
+				{{ $t('env_edu_sub') }}
+				<img src="../assets/vectors/ordino_reserva_biosfera_logo.svg">
+			</h3>
 		</hgroup>
 		<nav>
 			<ul class="main-nav">
