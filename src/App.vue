@@ -1,12 +1,16 @@
 <template>
-	<div id="app">
+	<div id="app" :class="env">
 		<router-view />
 	</div>
 </template>
 
 <script>
+const env = process.env.NODE_ENV;
+
 export default {
 	name: 'App',
-	components: {},
+	data() {
+		return { env };
+	},
 };
 </script>
