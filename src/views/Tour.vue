@@ -10,6 +10,10 @@
 				<h1>{{ waypoint.name }}</h1>
 				<p>{{ waypoint.description }}</p>
 			</header>
+			<div class="nav">
+				<a href="#" class="prev" @click.prevent="prev" />
+				<a href="#" class="next" @click.prevent="next" />
+			</div>
 			<scroller v-slot="{ item }" :items="waypoint.items">
 				<card :item="item" @click.native.stop="activate(item)">
 					<h3>{{ item.name }}</h3>
@@ -123,6 +127,12 @@ export default {
 		move({ direction }) {
 			const index = this.step + (direction === 'left' ? 1 : -1);
 			this.step = (this.waypoints.length + index) % this.waypoints.length;
+		},
+		prev() {
+			this.move({ direction: 'right' });
+		},
+		next() {
+			this.move({ direction: 'left' });
 		},
 	},
 };
