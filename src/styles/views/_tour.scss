@@ -73,4 +73,13 @@
 			border-bottom: 8px solid #fff;
 		}
 	}
+
+	.loading {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		font-size: 3rem;
+	}
 }

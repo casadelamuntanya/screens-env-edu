@@ -20,6 +20,7 @@
 				</card>
 			</scroller>
 		</div>
+		<p v-else class="loading">Carregant...</p>
 		<router-link to="/" class="close-btn">&times;</router-link>
 		<super-card
 			v-if="active"
